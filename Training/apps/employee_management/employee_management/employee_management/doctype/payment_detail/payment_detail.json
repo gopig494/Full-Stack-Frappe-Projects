@@ -1,0 +1,133 @@
+{
+ "autoname": "PAY-2021-.####",
+ "creation": "2021-08-11 13:04:20.082825",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type_of_payment_section",
+  "payment_type",
+  "mode_of_payment",
+  "column_break_4",
+  "posting_date",
+  "payment_status",
+  "payment_from_section",
+  "party_name",
+  "column_break_8",
+  "party",
+  "amount_section",
+  "paid_amount",
+  "reference_section",
+  "payment_references",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_payment_section",
+   "fieldtype": "Section Break",
+   "label": "Type Of Payment"
+  },
+  {
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Pay\nEmi"
+  },
+  {
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode Of Payment",
+   "options": "Cash\nDebit Card\nCredit Card"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_from_section",
+   "fieldtype": "Section Break",
+   "label": "Payment From"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party"
+  },
+  {
+   "fieldname": "amount_section",
+   "fieldtype": "Section Break",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "payment_references",
+   "fieldtype": "Table",
+   "label": "Payment References",
+   "options": "Reference"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payment Detail",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Payment Status",
+   "options": "\nUnpaid\nPaid\nPartially Paid"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-08-13 16:17:10.406155",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Payment Detail",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

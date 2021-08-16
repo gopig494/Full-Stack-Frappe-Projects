@@ -1,0 +1,1346 @@
+[DEBUG] 2021-08-16 11:28:57,685 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:29:20,929 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"total\":0,\"modified_by\":\"Administrator\",\"name\":\"ORD048-3\",\"parent\":null,\"amended_from\":\"ORD048-2\",\"payment_status\":\"Paid\",\"creation\":\"2021-08-16 11:29:18.019756\",\"modified\":\"2021-08-16 11:29:18.019756\",\"product_price\":\"100\",\"doctype\":\"Orderss\",\"idx\":0,\"parenttype\":null,\"outstanding\":null,\"paid_amount\":20,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"product_name\":\"Watch\",\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T05:59:20.378Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 17, in on_submit
+    self.outstanding= self.total-self.paid_amount
+TypeError: unsupported operand type(s) for -: 'unicode' and 'int'
+[ERROR] 2021-08-16 11:29:21,076 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:29:20.930297-127.0.0.1-ff7
+[DEBUG] 2021-08-16 11:29:57,874 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:30:58,047 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:31:58,230 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:32:58,409 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:33:58,595 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:34:58,761 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:35:58,989 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:36:22,155 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY42\",\"parent\":null,\"amended_from\":null,\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:36:13.407059\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":30,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD049-1\",\"modified_by\":\"Administrator\",\"name\":\"1fcd7aa709\",\"parent\":\"PAY42\",\"outstanding\":0,\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:36:13.407059\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:06:15.878Z\",\"__unsaved\":1}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 309, in _save
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 901, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 14, in validate
+    out =flt(self.total)- flt(self.paid_amount)
+AttributeError: 'Payments' object has no attribute 'total'
+[ERROR] 2021-08-16 11:36:22,304 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:36:22.155795-127.0.0.1-600
+[DEBUG] 2021-08-16 11:36:59,200 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:37:04,436 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY42\",\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:36:13.407059\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":30,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD049-1\",\"modified_by\":\"Administrator\",\"name\":\"1fcd7aa709\",\"parent\":\"PAY42\",\"outstanding\":0,\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:36:13.407059\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:06:57.766Z\",\"__unsaved\":1}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 309, in _save
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 901, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 14, in validate
+    out =flt(total)- flt(self.paid_amount)
+NameError: global name 'total' is not defined
+[ERROR] 2021-08-16 11:37:04,577 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:37:04.437341-127.0.0.1-453
+[DEBUG] 2021-08-16 11:37:59,406 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:38:27,664 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY42\",\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:36:13.407059\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":0,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD049-1\",\"modified_by\":\"Administrator\",\"name\":\"1fcd7aa709\",\"parent\":\"PAY42\",\"outstanding\":0,\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:36:13.407059\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:08:27.646Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 21, in on_submit
+    out =flt(total)- flt(self.paid_amount)
+NameError: global name 'total' is not defined
+[ERROR] 2021-08-16 11:38:28,100 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:38:27.665578-127.0.0.1-936
+[DEBUG] 2021-08-16 11:38:59,570 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:39:02,143 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY42\",\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:38:58.627601\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":8,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD049-1\",\"modified_by\":\"Administrator\",\"name\":\"1fcd7aa709\",\"parent\":\"PAY42\",\"outstanding\":0,\"creation\":\"2021-08-16 11:36:13.407059\",\"modified\":\"2021-08-16 11:38:58.627601\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}]}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 21, in on_submit
+    out =flt(self.total)- flt(self.paid_amount)
+AttributeError: 'Payments' object has no attribute 'total'
+[ERROR] 2021-08-16 11:39:02,311 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:39:02.143791-127.0.0.1-d6a
+[DEBUG] 2021-08-16 11:39:59,790 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:40:59,981 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:42:00,250 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:43:00,512 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:44:00,703 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:44:35,888 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY43-1\",\"parent\":null,\"amended_from\":\"PAY43\",\"creation\":\"2021-08-16 11:44:33.481075\",\"modified\":\"2021-08-16 11:44:33.481075\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":40,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD049-1\",\"modified_by\":\"Administrator\",\"name\":\"58fb682312\",\"parent\":\"PAY43-1\",\"outstanding\":0,\"creation\":\"2021-08-16 11:44:33.481075\",\"modified\":\"2021-08-16 11:44:33.481075\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":72,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:14:35.903Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 24, in on_submit
+    re =frappe.db.get_doc("Orderss",d.namee)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'MariaDBDatabase' object has no attribute 'get_doc'
+[ERROR] 2021-08-16 11:44:36,036 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:44:35.889087-127.0.0.1-693
+[ERROR] 2021-08-16 11:44:56,394 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY43-1\",\"parent\":null,\"amended_from\":\"PAY43\",\"creation\":\"2021-08-16 11:44:33.481075\",\"modified\":\"2021-08-16 11:44:33.481075\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":40,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD049-1\",\"modified_by\":\"Administrator\",\"name\":\"58fb682312\",\"parent\":\"PAY43-1\",\"outstanding\":0,\"creation\":\"2021-08-16 11:44:33.481075\",\"modified\":\"2021-08-16 11:44:33.481075\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":72,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:14:35.903Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 25, in on_submit
+    frappe.throw(re)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 354, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <employee_management.employee_management.doctype.orderss.orderss.Orderss object at 0x7f94e42efc50> is not JSON serializable
+[ERROR] 2021-08-16 11:44:56,538 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:44:56.395006-127.0.0.1-923
+[DEBUG] 2021-08-16 11:45:00,904 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:46:01,106 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:47:01,455 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:48:01,637 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:49:01,823 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:50:15,409 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:51:15,612 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:52:15,797 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:53:15,985 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 11:53:19,676 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY44-1\",\"amended_from\":\"PAY44\",\"creation\":\"2021-08-16 11:50:19.260438\",\"modified\":\"2021-08-16 11:50:19.260438\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":20,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"87a9e9c6cb\",\"parent\":\"PAY44-1\",\"outstanding\":0,\"creation\":\"2021-08-16 11:50:19.260438\",\"modified\":\"2021-08-16 11:50:19.260438\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":100,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:23:19.351Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.msgprint(re)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 354, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <employee_management.employee_management.doctype.orderss.orderss.Orderss object at 0x7f38a00820d0> is not JSON serializable
+[ERROR] 2021-08-16 11:53:19,847 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 11:53:19.677698-127.0.0.1-759
+[DEBUG] 2021-08-16 11:54:16,161 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:55:16,397 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:56:16,597 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:57:16,770 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:58:16,925 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 11:59:17,113 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:00:17,801 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:01:19,134 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:02:20,695 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:03:21,215 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:03:51,374 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45\",\"parent\":null,\"amended_from\":null,\"creation\":\"2021-08-16 12:03:24.772060\",\"modified\":\"2021-08-16 12:03:24.772060\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":2,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"9454becc3f\",\"parent\":\"PAY45\",\"outstanding\":0,\"creation\":\"2021-08-16 12:03:24.772060\",\"modified\":\"2021-08-16 12:03:24.772060\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:33:30.114Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.msgprint(re)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 354, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <employee_management.employee_management.doctype.orderss.orderss.Orderss object at 0x7f389864f7d0> is not JSON serializable
+[ERROR] 2021-08-16 12:03:51,573 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:03:51.374912-127.0.0.1-0d3
+[DEBUG] 2021-08-16 12:04:21,958 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:05:22,153 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:06:22,360 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:07:22,649 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:08:00,404 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY46\",\"parent\":null,\"amended_from\":null,\"creation\":\"2021-08-16 12:07:57.887980\",\"modified\":\"2021-08-16 12:07:57.887980\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":20,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD052\",\"modified_by\":\"Administrator\",\"name\":\"e2c5b82eb4\",\"parent\":\"PAY46\",\"outstanding\":0,\"creation\":\"2021-08-16 12:07:57.887980\",\"modified\":\"2021-08-16 12:07:57.887980\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":100,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:38:00.289Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.msgprint(re)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 354, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <employee_management.employee_management.doctype.orderss.orderss.Orderss object at 0x7faf9061d090> is not JSON serializable
+[ERROR] 2021-08-16 12:08:00,550 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:08:00.405042-127.0.0.1-3f7
+[DEBUG] 2021-08-16 12:08:22,836 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:09:22,996 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:10:23,192 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:11:23,360 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:11:57,940 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"parent\":null,\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:41:58.281Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.msgprint(re.paid_amount)
+AttributeError: 'unicode' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:11:58,086 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:11:57.941006-127.0.0.1-0e0
+[DEBUG] 2021-08-16 12:12:23,579 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:12:32,431 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"parent\":null,\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:41:58.281Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.throw(re.paid_amount)
+AttributeError: 'unicode' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:12:32,592 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:12:32.432024-127.0.0.1-2d6
+[DEBUG] 2021-08-16 12:13:23,762 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:13:31,109 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"parent\":null,\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"parenttype\":null,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"parentfield\":null,\"__last_sync_on\":\"2021-08-16T06:41:58.281Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 24, in on_submit
+    frappe.throw(d.paid_amount)
+AttributeError: 'unicode' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:13:31,258 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:13:31.110640-127.0.0.1-9ed
+[ERROR] 2021-08-16 12:13:41,396 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:43:39.900Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 24, in on_submit
+    frappe.throw(d.paid_amount)
+AttributeError: 'unicode' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:13:41,568 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:13:41.396780-127.0.0.1-4f1
+[DEBUG] 2021-08-16 12:14:23,945 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:14:42,103 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:43:39.900Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 24, in on_submit
+    frappe.throw(ret.paid_amount)
+AttributeError: 'unicode' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:14:42,264 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:14:42.104222-127.0.0.1-b2c
+[DEBUG] 2021-08-16 12:15:24,134 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:15:36,479 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:43:39.900Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.throw(re.paid_amount)
+AttributeError: 'float' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:15:36,626 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:15:36.480470-127.0.0.1-d40
+[DEBUG] 2021-08-16 12:16:24,359 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:17:24,543 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:18:24,719 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:18:38,899 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:48:39.072Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 21, in on_submit
+    re = frappedb.db.get_value("Orderss",d.namee,"paid_amount")
+NameError: global name 'frappedb' is not defined
+[ERROR] 2021-08-16 12:18:39,314 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:18:38.900050-127.0.0.1-8b2
+[DEBUG] 2021-08-16 12:19:24,904 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:20:25,130 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:21:25,349 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:22:09,169 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY45-1\",\"amended_from\":\"PAY45\",\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":10,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"namee\":\"ORD051-1\",\"modified_by\":\"Administrator\",\"name\":\"3ab9513014\",\"parent\":\"PAY45-1\",\"outstanding\":0,\"creation\":\"2021-08-16 12:11:55.826128\",\"modified\":\"2021-08-16 12:11:55.826128\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":0,\"total\":80,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-16T06:52:09.260Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 22, in on_submit
+    frappe.throw(re.paid_amount)
+AttributeError: 'float' object has no attribute 'paid_amount'
+[ERROR] 2021-08-16 12:22:09,608 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:22:09.170696-127.0.0.1-efc
+[DEBUG] 2021-08-16 12:22:25,531 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:23:25,722 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:24:25,927 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:25:26,108 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:26:26,383 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:27:26,545 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:28:26,774 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:28:32,323 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Orderss\",\"name\":\"New Orderss 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"payment_status\":\"Paid\",\"customer_name\":\"Boopathy\",\"product_name\":\"Watch\",\"product_price\":\"300\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 901, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 16, in validate
+    if self.paid_amout:
+AttributeError: 'Orderss' object has no attribute 'paid_amout'
+[ERROR] 2021-08-16 12:28:32,468 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:28:32.324407-127.0.0.1-7a2
+[ERROR] 2021-08-16 12:29:13,246 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD054"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 57, in new_entry
+    result.append("ref",{"type":"Orderss","namee":re.name,"total":sam})
+NameError: global name 'sam' is not defined
+[ERROR] 2021-08-16 12:29:13,391 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:29:13.246545-127.0.0.1-8cd
+[DEBUG] 2021-08-16 12:29:27,065 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:30:27,268 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:30:37,285 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "650d0f59c0"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+AttributeError: 'module' object has no attribute 'make_payment'
+[ERROR] 2021-08-16 12:30:37,447 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:30:37.286224-127.0.0.1-e3b
+[ERROR] 2021-08-16 12:30:44,364 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "650d0f59c0"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+AttributeError: 'module' object has no attribute 'make_payment'
+[ERROR] 2021-08-16 12:30:44,367 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:30:44.364529-127.0.0.1-fe8
+[DEBUG] 2021-08-16 12:31:27,445 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:32:07,384 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "84e2650cfd"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+ImportError: No module named doctype.order_menu_info
+[ERROR] 2021-08-16 12:32:07,529 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:32:07.385285-127.0.0.1-81b
+[DEBUG] 2021-08-16 12:32:27,659 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:32:50,546 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "84e2650cfd"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+AttributeError: 'module' object has no attribute 'make_payment'
+[ERROR] 2021-08-16 12:32:50,737 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:32:50.546503-127.0.0.1-0d7
+[DEBUG] 2021-08-16 12:33:27,998 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:34:28,167 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:34:55,606 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "4f20c66aaf"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+AttributeError: 'module' object has no attribute 'make_payment'
+[ERROR] 2021-08-16 12:34:55,770 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:34:55.606456-127.0.0.1-362
+[DEBUG] 2021-08-16 12:35:28,371 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-16 12:35:51,752 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 17:56:54.049509",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Order Menu Info",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 70
+    @frappe.whitelist(allow_guest=True)
+    ^
+IndentationError: expected an indented block
+[ERROR] 2021-08-16 12:35:51,972 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:35:51.753197-127.0.0.1-58d
+[ERROR] 2021-08-16 12:36:21,103 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 17:56:54.049509",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Order Menu Info",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 70
+    @frappe.whitelist(allow_guest=True)
+    ^
+IndentationError: expected an indented block
+[ERROR] 2021-08-16 12:36:21,111 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:36:21.104234-127.0.0.1-a30
+[DEBUG] 2021-08-16 12:36:28,607 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:37:28,802 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:38:28,991 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:39:29,148 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-16 12:40:29,366 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management

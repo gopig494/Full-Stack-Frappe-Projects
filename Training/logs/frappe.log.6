@@ -1,0 +1,1601 @@
+[DEBUG] 2021-08-13 16:31:38,930 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:32:39,187 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:32:48,012 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.db.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/werkzeug/local.py", line 348, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: 'MariaDBDatabase' object has no attribute 'get_doc'
+[ERROR] 2021-08-13 16:32:48,148 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:32:48.012537-127.0.0.1-289
+[DEBUG] 2021-08-13 16:33:39,383 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:34:39,583 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:35:00,519 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 43, in new_entry
+    for d in self.get(self):
+AttributeError: 'unicode' object has no attribute 'get'
+[ERROR] 2021-08-13 16:35:00,920 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:35:00.519876-127.0.0.1-238
+[DEBUG] 2021-08-13 16:35:39,758 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:35:44,467 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    frappe.throw(d.customer_name)
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 16:35:44,605 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:35:44.468461-127.0.0.1-d96
+[ERROR] 2021-08-13 16:36:14,997 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD027 (frappe.core.doctype.ord027.ord027 Error: No module named ord027.ord027)
+[ERROR] 2021-08-13 16:36:15,421 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:36:14.998315-127.0.0.1-7c5
+[DEBUG] 2021-08-13 16:36:39,979 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:37:40,382 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:38:40,561 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:38:55,255 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":"160"
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 16:38:56,775 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":"160"
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 16:38:57,188 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:38:56.775837-127.0.0.1-79f
+[DEBUG] 2021-08-13 16:39:40,753 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:40:40,970 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:41:41,160 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:42:42,059 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:43:42,405 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:44:42,624 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:44:52,249 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":"160"
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 16:44:52,655 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:44:52.250139-127.0.0.1-064
+[ERROR] 2021-08-13 16:45:36,324 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Orderss",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 48
+    '''def new_entry(self):
+	
+	
+	result= frappe.new_doc({
+			"doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":"160"
+		})
+
+	result.append("ref",{"type":"Orderss","namee":self.name})
+	return result()'''
+                           
+	
+	
+	                        
+			                                                                                                                       
+		  
+
+	                                                         
+	                 ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 16:45:36,927 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:45:36.325449-127.0.0.1-d3c
+[DEBUG] 2021-08-13 16:45:42,823 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:46:15,425 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    target_doc = get_mapped_doc("Orderss", source_name,
+NameError: global name 'get_mapped_doc' is not defined
+[ERROR] 2021-08-13 16:46:15,841 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:46:15.426038-127.0.0.1-1d8
+[DEBUG] 2021-08-13 16:46:43,106 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:47:43,296 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:48:43,525 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:49:43,711 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:50:24,769 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 16:50:25,178 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:50:24.771877-127.0.0.1-267
+[DEBUG] 2021-08-13 16:50:43,903 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:51:34,275 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":"160"
+NameError: global name 'self' is not defined
+[ERROR] 2021-08-13 16:51:34,490 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:51:34.276697-127.0.0.1-592
+[ERROR] 2021-08-13 16:51:37,076 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":"160"
+NameError: global name 'self' is not defined
+[ERROR] 2021-08-13 16:51:37,486 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:51:37.077199-127.0.0.1-fb3
+[DEBUG] 2021-08-13 16:51:44,121 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:51:58,874 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 16:51:59,280 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:51:58.876219-127.0.0.1-158
+[DEBUG] 2021-08-13 16:52:44,321 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:53:33,112 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 16:53:33,115 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:53:33.113204-127.0.0.1-1d2
+[DEBUG] 2021-08-13 16:53:44,560 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:54:44,927 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:55:45,132 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:56:45,344 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 16:57:45,537 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:58:03,815 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 16:58:03,977 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:58:03.816406-127.0.0.1-423
+[ERROR] 2021-08-13 16:58:44,296 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+NameError: global name 'self' is not defined
+[ERROR] 2021-08-13 16:58:44,457 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:58:44.296752-127.0.0.1-ceb
+[DEBUG] 2021-08-13 16:58:45,755 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 16:59:25,283 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 16:59:25,443 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 16:59:25.284025-127.0.0.1-ea6
+[DEBUG] 2021-08-13 16:59:46,082 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:00:37,503 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 2 arguments (0 given)
+[ERROR] 2021-08-13 17:00:37,668 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:00:37.504298-127.0.0.1-34f
+[DEBUG] 2021-08-13 17:00:46,316 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:01:46,578 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:01:47,725 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 17:01:47,887 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:01:47.726092-127.0.0.1-f18
+[ERROR] 2021-08-13 17:01:55,327 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "employee_management.employee_management.doctype.orderss.orderss.new_entry"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+TypeError: new_entry() takes exactly 1 argument (0 given)
+[ERROR] 2021-08-13 17:01:55,490 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:01:55.327997-127.0.0.1-da8
+[ERROR] 2021-08-13 17:02:34,153 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+NameError: global name 'self' is not defined
+[ERROR] 2021-08-13 17:02:34,165 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:02:34.154154-127.0.0.1-88b
+[DEBUG] 2021-08-13 17:02:46,785 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:03:40,112 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD027"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD027 (frappe.core.doctype.ord027.ord027 Error: No module named ord027.ord027)
+[ERROR] 2021-08-13 17:03:40,249 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:03:40.113447-127.0.0.1-852
+[DEBUG] 2021-08-13 17:03:46,991 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:04:47,200 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:05:19,370 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc",
+ "doctype": "Payments",
+ "name": "PAY18"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 37
+    else self.paid_amount == 0:
+            ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 17:05:19,511 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:05:19.371076-127.0.0.1-eb0
+[ERROR] 2021-08-13 17:05:23,257 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc",
+ "doctype": "Payments",
+ "name": "PAY17"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 37
+    else self.paid_amount == 0:
+            ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 17:05:23,263 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:05:23.257562-127.0.0.1-088
+[DEBUG] 2021-08-13 17:05:47,406 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:06:47,600 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:07:47,768 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:08:48,000 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:09:48,199 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:10:48,400 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:11:48,576 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:12:48,806 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:13:14,424 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD019"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD019 (frappe.core.doctype.ord019.ord019 Error: No module named ord019.ord019)
+[ERROR] 2021-08-13 17:13:14,584 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:13:14.425465-127.0.0.1-db0
+[ERROR] 2021-08-13 17:13:25,043 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD019"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD019 (frappe.core.doctype.ord019.ord019 Error: No module named ord019.ord019)
+[ERROR] 2021-08-13 17:13:25,049 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:13:25.044029-127.0.0.1-e0d
+[DEBUG] 2021-08-13 17:13:48,992 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:14:49,194 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:15:49,370 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:16:49,583 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:17:49,790 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:18:49,989 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:19:24,908 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD028"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD028 (frappe.core.doctype.ord028.ord028 Error: No module named ord028.ord028)
+[ERROR] 2021-08-13 17:19:24,914 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:19:24.908861-127.0.0.1-335
+[DEBUG] 2021-08-13 17:19:50,191 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:20:50,405 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:20:52,053 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc",
+ "doctype": "Payments",
+ "name": "PAY21"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 37
+    else self.paid_amount == 0:
+            ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 17:20:52,202 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:20:52.054380-127.0.0.1-2ee
+[DEBUG] 2021-08-13 17:21:50,591 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:22:50,831 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:23:34,117 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD029"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD029 (frappe.core.doctype.ord029.ord029 Error: No module named ord029.ord029)
+[ERROR] 2021-08-13 17:23:34,275 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:23:34.118339-127.0.0.1-c9d
+[DEBUG] 2021-08-13 17:23:51,021 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:24:51,233 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:25:17,005 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD030"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD030 (frappe.core.doctype.ord030.ord030 Error: No module named ord030.ord030)
+[ERROR] 2021-08-13 17:25:17,150 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:25:17.005930-127.0.0.1-046
+[DEBUG] 2021-08-13 17:25:51,415 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:26:04,379 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD030"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD030 (frappe.core.doctype.ord030.ord030 Error: No module named ord030.ord030)
+[ERROR] 2021-08-13 17:26:04,539 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:26:04.380549-127.0.0.1-299
+[DEBUG] 2021-08-13 17:26:51,596 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:27:17,882 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD031"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":self.paid_amount
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 17:27:18,026 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:27:17.882642-127.0.0.1-ad4
+[ERROR] 2021-08-13 17:27:44,486 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD032"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":self.paid_amount
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 17:27:44,490 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:27:44.486878-127.0.0.1-0a1
+[DEBUG] 2021-08-13 17:27:51,768 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:28:51,970 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:29:52,155 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:30:52,361 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:31:52,556 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:32:03,026 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD033"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash","paid_amount":self.paid_amount
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 17:32:03,232 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:32:03.026754-127.0.0.1-05b
+[DEBUG] 2021-08-13 17:32:52,768 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:33:03,974 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD034"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash"
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 17:33:04,117 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:33:03.974840-127.0.0.1-08b
+[DEBUG] 2021-08-13 17:33:52,955 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:34:35,988 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"total\":300,\"modified_by\":\"Administrator\",\"name\":\"ORD035\",\"parent\":null,\"amended_from\":null,\"payment_status\":\"Partially paid\",\"creation\":\"2021-08-13 17:34:32.707784\",\"modified\":\"2021-08-13 17:34:32.707784\",\"product_price\":\"300\",\"doctype\":\"Orderss\",\"idx\":0,\"parenttype\":null,\"outstanding\":null,\"paid_amount\":0,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"product_name\":\"Watch\",\"parentfield\":null,\"__last_sync_on\":\"2021-08-13T12:04:32.857Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 12, in on_submit
+    insert_user(self)
+NameError: global name 'insert_user' is not defined
+[ERROR] 2021-08-13 17:34:36,132 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:34:35.988855-127.0.0.1-8c0
+[DEBUG] 2021-08-13 17:34:53,139 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:35:53,349 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:36:53,569 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:37:51,010 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD036"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":self.customer_name,"payment_type":"Pay","payment_mode":"Cash"
+AttributeError: 'unicode' object has no attribute 'customer_name'
+[ERROR] 2021-08-13 17:37:51,155 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:37:51.011329-127.0.0.1-e6a
+[DEBUG] 2021-08-13 17:37:53,767 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:38:53,924 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:38:59,012 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD036"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD036 (frappe.core.doctype.ord036.ord036 Error: No module named ord036.ord036)
+[ERROR] 2021-08-13 17:38:59,151 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:38:59.012965-127.0.0.1-3fc
+[ERROR] 2021-08-13 17:39:18,034 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD036"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD036 (frappe.core.doctype.ord036.ord036 Error: No module named ord036.ord036)
+[ERROR] 2021-08-13 17:39:18,041 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:39:18.034822-127.0.0.1-29a
+[DEBUG] 2021-08-13 17:39:54,126 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:40:54,323 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:41:54,572 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:42:54,811 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:43:11,445 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD038"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD038 (frappe.core.doctype.ord038.ord038 Error: No module named ord038.ord038)
+[ERROR] 2021-08-13 17:43:11,451 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:43:11.445773-127.0.0.1-567
+[ERROR] 2021-08-13 17:43:48,854 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD038"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 41, in new_entry
+    ret = frappe.get_doc(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD038 (frappe.core.doctype.ord038.ord038 Error: No module named ord038.ord038)
+[ERROR] 2021-08-13 17:43:49,263 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:43:48.855281-127.0.0.1-006
+[DEBUG] 2021-08-13 17:43:55,013 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 17:44:55,293 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:45:48,765 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD038"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":"Boopathy","payment_type":"Pay","payment_mode":"Cash"
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 699, in new_doc
+    return get_new_doc(doctype, parent_doc, parentfield, as_dict=as_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/create_new.py", line 18, in get_new_doc
+    if doctype not in frappe.local.new_doc_templates:
+TypeError: unhashable type: 'dict'
+[ERROR] 2021-08-13 17:45:50,102 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD038"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
+    return method(source_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 44, in new_entry
+    "doctype": "Payments","customer_name":"Boopathy","payment_type":"Pay","payment_mode":"Cash"
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 699, in new_doc
+    return get_new_doc(doctype, parent_doc, parentfield, as_dict=as_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/create_new.py", line 18, in get_new_doc
+    if doctype not in frappe.local.new_doc_templates:
+TypeError: unhashable type: 'dict'
+[ERROR] 2021-08-13 17:45:50,518 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:45:50.103464-127.0.0.1-3a9
+[DEBUG] 2021-08-13 17:45:55,458 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:46:51,596 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD038"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 45
+    }})
+     ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 17:46:51,760 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 17:46:51.596854-127.0.0.1-53b
+[DEBUG] 2021-08-13 17:46:55,709 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 17:47:08,557 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
+ "selected_children": "{}",
+ "source_name": "ORD038"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 45
+    })
+    ^
+SyntaxError: invalid syntax

@@ -1,0 +1,1032 @@
+[ERROR] 2021-08-12 19:48:12,041 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"allow_import\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"track_changes\":1,\"modified\":\"2021-08-12 19:47:06.439675\",\"allow_auto_repeat\":0,\"sort_order\":\"DESC\",\"owner\":\"Administrator\",\"editable_grid\":1,\"in_create\":0,\"is_tree\":0,\"document_type\":\"\",\"modified_by\":\"Administrator\",\"track_views\":0,\"allow_rename\":0,\"custom\":0,\"max_attachments\":0,\"docstatus\":0,\"is_submittable\":1,\"sort_field\":\"modified\",\"allow_copy\":0,\"engine\":\"InnoDB\",\"read_only\":0,\"allow_guest_to_view\":0,\"istable\":0,\"allow_events_in_timeline\":0,\"has_web_view\":0,\"show_name_in_global_search\":0,\"beta\":0,\"module\":\"Employee Management\",\"show_preview_popup\":0,\"doctype\":\"DocType\",\"autoname\":\"WE-.##\",\"issingle\":0,\"name\":\"Wallet Transaction\",\"idx\":0,\"hide_toolbar\":0,\"track_seen\":0,\"name_case\":\"\",\"fields\":[{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"41a7c0169e\",\"idx\":1,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_1\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"2472c4673e\",\"idx\":2,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_2\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"913ada01f2\",\"idx\":3,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_3\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"70fcb60dd4\",\"idx\":4,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_4\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"2e4acebb5d\",\"idx\":5,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_5\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Make Payment \",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":1,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"b32fc950e5\",\"idx\":6,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"make_payment\",\"fieldtype\":\"Button\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Payment Status\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":1,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"c33ab7f159\",\"idx\":7,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"payment_status\",\"fieldtype\":\"Select\",\"options\":\"\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"47859df9e6\",\"idx\":8,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"section_break_4\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Customer Name\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"f38772e58f\",\"idx\":9,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"customer_name\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Date\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"dfa435674b\",\"idx\":10,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"date\",\"fieldtype\":\"Date\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Product ID\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"0ba89d1632\",\"idx\":11,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"product_id\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":1,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Product Name\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"c3923d1943\",\"idx\":12,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"product_name\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":1,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Product Price\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"f4442594b8\",\"idx\":13,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"product_price\",\"fieldtype\":\"Currency\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Paid Amount\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":1,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"a60bf26f97\",\"idx\":14,\"default\":\"IF You Not Paid Enter '0'\",\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"paid_amount\",\"fieldtype\":\"Currency\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":1,\"creation\":\"2021-08-11 16:46:31.061281\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":1,\"print_hide\":1,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Amended From\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"c7ded8650a\",\"idx\":15,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"parenttype\":\"DocType\",\"fieldname\":\"amended_from\",\"fieldtype\":\"Link\",\"options\":\"Wallet Transaction\",\"report_hide\":0,\"parentfield\":\"fields\"}],\"permissions\":[{\"creation\":\"2021-08-11 11:52:48.089663\",\"share\":1,\"doctype\":\"DocPerm\",\"owner\":\"Administrator\",\"export\":1,\"cancel\":1,\"set_user_permissions\":0,\"modified_by\":\"Administrator\",\"create\":1,\"submit\":1,\"write\":1,\"role\":\"System Manager\",\"print\":1,\"docstatus\":0,\"permlevel\":0,\"parent\":\"Wallet Transaction\",\"read\":1,\"import\":0,\"report\":1,\"name\":\"9f15f108bd\",\"idx\":1,\"amend\":0,\"modified\":\"2021-08-12 19:47:06.439675\",\"email\":1,\"parenttype\":\"DocType\",\"parentfield\":\"permissions\",\"if_owner\":0,\"delete\":1}],\"quick_entry\":1,\"__last_sync_on\":\"2021-08-12T14:18:04.987Z\",\"__unsaved\":1}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 932, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 282, in on_update
+    raise e
+DataError: (1265, u"Data truncated for column 'paid_amount' at row 1")
+[ERROR] 2021-08-12 19:55:05,022 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"allow_import\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"track_changes\":1,\"modified\":\"2021-08-12 19:50:22.628454\",\"allow_auto_repeat\":0,\"sort_order\":\"DESC\",\"owner\":\"Administrator\",\"editable_grid\":1,\"in_create\":0,\"is_tree\":0,\"document_type\":\"\",\"modified_by\":\"Administrator\",\"track_views\":0,\"allow_rename\":0,\"custom\":0,\"max_attachments\":0,\"docstatus\":0,\"is_submittable\":1,\"sort_field\":\"modified\",\"allow_copy\":0,\"engine\":\"InnoDB\",\"read_only\":0,\"allow_guest_to_view\":0,\"istable\":0,\"allow_events_in_timeline\":0,\"has_web_view\":0,\"show_name_in_global_search\":0,\"beta\":0,\"module\":\"Employee Management\",\"show_preview_popup\":0,\"doctype\":\"DocType\",\"autoname\":\"WE-.##\",\"issingle\":0,\"name\":\"Wallet Transaction\",\"idx\":0,\"hide_toolbar\":0,\"track_seen\":0,\"name_case\":\"\",\"fields\":[{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"41a7c0169e\",\"idx\":1,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_1\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"2472c4673e\",\"idx\":2,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_2\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"913ada01f2\",\"idx\":3,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_3\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"70fcb60dd4\",\"idx\":4,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_4\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"2e4acebb5d\",\"idx\":5,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_5\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Make Payment \",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":1,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"b32fc950e5\",\"idx\":6,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"make_payment\",\"fieldtype\":\"Button\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Payment Status\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":1,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"c33ab7f159\",\"idx\":7,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"payment_status\",\"fieldtype\":\"Select\",\"options\":\"\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"47859df9e6\",\"idx\":8,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"section_break_4\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Customer Name\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"f38772e58f\",\"idx\":9,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"customer_name\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Date\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"dfa435674b\",\"idx\":10,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"date\",\"fieldtype\":\"Date\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Product ID\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"0ba89d1632\",\"idx\":11,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"product_id\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":1,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Product Name\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"c3923d1943\",\"idx\":12,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"product_name\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":1,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Product Price\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"f4442594b8\",\"idx\":13,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"product_price\",\"fieldtype\":\"Currency\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 11:52:48.089663\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Paid Amount\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":1,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"a60bf26f97\",\"idx\":14,\"default\":\"IF You Not Paid Enter '0'\",\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"paid_amount\",\"fieldtype\":\"Currency\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":1,\"creation\":\"2021-08-11 16:46:31.061281\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":1,\"print_hide\":1,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Amended From\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Wallet Transaction\",\"search_index\":0,\"allow_on_submit\":0,\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"c7ded8650a\",\"idx\":15,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"parenttype\":\"DocType\",\"fieldname\":\"amended_from\",\"fieldtype\":\"Link\",\"options\":\"Wallet Transaction\",\"report_hide\":0,\"parentfield\":\"fields\"}],\"permissions\":[{\"creation\":\"2021-08-11 11:52:48.089663\",\"share\":1,\"doctype\":\"DocPerm\",\"owner\":\"Administrator\",\"export\":1,\"cancel\":1,\"set_user_permissions\":0,\"modified_by\":\"Administrator\",\"create\":1,\"submit\":1,\"write\":1,\"role\":\"System Manager\",\"print\":1,\"docstatus\":0,\"permlevel\":0,\"parent\":\"Wallet Transaction\",\"read\":1,\"import\":0,\"report\":1,\"name\":\"9f15f108bd\",\"idx\":1,\"amend\":0,\"modified\":\"2021-08-12 19:50:22.628454\",\"email\":1,\"parenttype\":\"DocType\",\"parentfield\":\"permissions\",\"if_owner\":0,\"delete\":1}],\"quick_entry\":1,\"__unsaved\":1}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 932, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 282, in on_update
+    raise e
+DataError: (1265, u"Data truncated for column 'paid_amount' at row 1")
+[ERROR] 2021-08-12 19:55:05,172 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 19:55:05.023892-127.0.0.1-a29
+[DEBUG] 2021-08-13 10:27:44,242 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:28:44,663 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:29:44,830 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:30:44,997 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:31:45,187 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:32:45,388 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:33:45,673 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:34:45,850 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 10:35:44,248 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"WE-08\",\"parent\":null,\"amended_from\":null,\"creation\":\"2021-08-13 10:35:41.454865\",\"paid_amount\":30000,\"modified\":\"2021-08-13 10:35:41.454865\",\"product_price\":50000,\"doctype\":\"Wallet Transaction\",\"idx\":0,\"parenttype\":null,\"product_id\":\"GTR500E\",\"date\":\"2021-08-17\",\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Gopi\",\"product_name\":\"MI\",\"parentfield\":null,\"__last_sync_on\":\"2021-08-13T05:05:41.595Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/wallet_transaction/wallet_transaction.py", line 16, in on_submit
+    add_child(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/wallet_transaction/wallet_transaction.py", line 103, in add_child
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 260, in insert
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_detail/payment_detail.py", line 30, in on_submit
+    status(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_detail/payment_detail.py", line 37, in status
+    if self.paid_amount == self.product_price:
+AttributeError: 'PaymentDetail' object has no attribute 'product_price'
+[ERROR] 2021-08-13 10:35:44,436 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 10:35:44.249624-127.0.0.1-dcc
+[DEBUG] 2021-08-13 10:35:46,151 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:36:46,351 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:37:46,577 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:38:49,827 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:39:51,952 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:40:59,581 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:42:01,531 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:43:02,235 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:44:02,686 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:45:03,157 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:46:03,580 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:47:04,028 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:48:04,927 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:49:05,335 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:50:05,637 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:51:05,988 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:52:06,377 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:53:06,620 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:54:06,811 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:55:07,190 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:56:07,595 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:57:07,848 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:58:08,000 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 10:59:08,258 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:00:08,538 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:01:08,817 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:02:09,025 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:03:09,258 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:04:09,926 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:05:10,464 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:06:10,681 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:07:10,871 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:08:11,082 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:09:11,254 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:10:11,974 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:11:12,160 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:12:12,368 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:13:12,544 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:14:12,745 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:15:13,016 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:16:13,248 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:17:13,458 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:18:15,622 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:19:15,856 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:20:16,087 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:21:16,303 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:22:16,551 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:23:16,717 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:24:16,924 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:25:17,104 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:26:17,284 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:27:17,515 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:28:17,746 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:29:17,932 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:30:18,163 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:31:18,343 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:32:18,535 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:33:18,723 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:34:18,915 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:35:19,110 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:36:19,312 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:37:19,490 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:38:19,674 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 11:38:58,168 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"WE-24\",\"parent\":null,\"amended_from\":null,\"creation\":\"2021-08-13 11:38:55.542339\",\"paid_amount\":350,\"modified\":\"2021-08-13 11:38:55.542339\",\"product_price\":500,\"doctype\":\"Wallet Transaction\",\"idx\":0,\"parenttype\":null,\"product_id\":\"dsa\",\"date\":\"2021-08-02\",\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"dsa\",\"product_name\":\"jkk\",\"parentfield\":null,\"__last_sync_on\":\"2021-08-13T06:08:55.594Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/wallet_transaction/wallet_transaction.py", line 16, in on_submit
+    add_child(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/wallet_transaction/wallet_transaction.py", line 98, in add_child
+    "paid_amount": self.paid_amount,
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_detail/payment_detail.py", line 11, in <module>
+    class PaymentDetail(Document):
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_detail/payment_detail.py", line 28, in PaymentDetail
+    status(self)
+NameError: name 'status' is not defined
+[ERROR] 2021-08-13 11:38:58,333 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:38:58.169582-127.0.0.1-a5f
+[DEBUG] 2021-08-13 11:39:19,914 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 11:39:37,346 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.load.getdoc",
+ "doctype": "Payments",
+ "name": "PAY06"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
+    doc = frappe.get_doc(doctype, name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 30
+    res = frappe.set_value("paid_amount":self.paid_amount)
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 11:39:37,488 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:39:37.347423-127.0.0.1-23f
+[ERROR] 2021-08-13 11:39:50,209 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payments",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 30
+    res = frappe.set_value("paid_amount":self.paid_amount)
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 11:39:50,776 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:39:50.210993-127.0.0.1-f90
+[DEBUG] 2021-08-13 11:40:20,108 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:41:20,284 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:42:20,465 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:43:20,650 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:44:20,869 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 11:44:32,737 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"drfge\",\"order_item_id\":\"dfgfdggdf\",\"order_item\":\"eertet\",\"paid_amount\":11,\"date\":\"2021-08-13\",\"price\":23}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 28, in after_insert
+    docInsert = frappe.get_doc({
+NameError: global name 'frappe' is not defined
+[ERROR] 2021-08-13 11:44:32,883 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:44:32.738660-127.0.0.1-24a
+[DEBUG] 2021-08-13 11:45:21,047 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:46:21,309 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:47:21,482 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:48:21,672 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:49:21,854 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:50:22,026 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:51:22,195 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:52:43,592 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 11:53:24,174 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY12\",\"creation\":\"2021-08-13 11:50:54.790321\",\"modified\":\"2021-08-13 11:50:54.790321\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":160,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"boopathy\",\"ref\":[{\"namee\":\"ORD014\",\"modified_by\":\"Administrator\",\"name\":\"195daadd00\",\"parent\":\"PAY12\",\"outstanding\":3840,\"creation\":\"2021-08-13 11:50:54.790321\",\"modified\":\"2021-08-13 11:50:54.790321\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":160,\"total\":4000,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-13T06:21:03.561Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 30, in on_submit
+    frappe.throw(re)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 354, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <employee_management.employee_management.doctype.payments.payments.Payments object at 0x7f3dea4ea810> is not JSON serializable
+[ERROR] 2021-08-13 11:53:24,609 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:53:24.175069-127.0.0.1-c37
+[DEBUG] 2021-08-13 11:53:43,765 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 11:54:04,368 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY12\",\"creation\":\"2021-08-13 11:50:54.790321\",\"modified\":\"2021-08-13 11:50:54.790321\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":160,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"boopathy\",\"ref\":[{\"namee\":\"ORD014\",\"modified_by\":\"Administrator\",\"name\":\"195daadd00\",\"parent\":\"PAY12\",\"outstanding\":3840,\"creation\":\"2021-08-13 11:50:54.790321\",\"modified\":\"2021-08-13 11:50:54.790321\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":160,\"total\":4000,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-13T06:21:03.561Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 30, in on_submit
+    frappe.throw(re)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 354, in msgprint
+    message_log.append(json.dumps(out))
+  File "/usr/lib/python2.7/json/__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <employee_management.employee_management.doctype.payments.payments.Payments object at 0x7f3cf8429090> is not JSON serializable
+[ERROR] 2021-08-13 11:54:04,599 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:54:04.372813-127.0.0.1-321
+[DEBUG] 2021-08-13 11:54:43,970 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 11:54:49,256 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"modified_by\":\"Administrator\",\"name\":\"PAY12\",\"creation\":\"2021-08-13 11:50:54.790321\",\"modified\":\"2021-08-13 11:50:54.790321\",\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":160,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"boopathy\",\"ref\":[{\"namee\":\"ORD014\",\"modified_by\":\"Administrator\",\"name\":\"195daadd00\",\"parent\":\"PAY12\",\"outstanding\":3840,\"creation\":\"2021-08-13 11:50:54.790321\",\"modified\":\"2021-08-13 11:50:54.790321\",\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"owner\":\"Administrator\",\"docstatus\":0,\"allocated\":160,\"total\":4000,\"type\":\"Orderss\",\"parentfield\":\"ref\"}],\"__last_sync_on\":\"2021-08-13T06:21:03.561Z\"}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 29, in on_submit
+    re = frappe.get_single(d.namee)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 785, in get_single
+    return get_doc(doctype, doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 206, in load_doctype_module
+    raise ImportError('Module import failed for {0} ({1})'.format(doctype, module_name + ' Error: ' + str(e)))
+ImportError: Module import failed for ORD014 (frappe.core.doctype.ord014.ord014 Error: No module named ord014.ord014)
+[ERROR] 2021-08-13 11:54:49,905 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 11:54:49.257554-127.0.0.1-163
+[DEBUG] 2021-08-13 11:55:44,149 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:56:44,390 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:57:44,588 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:58:44,749 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 11:59:44,940 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:00:45,336 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:01:45,818 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 12:02:38,500 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 24
+    if self.paid_amount ! = 0 and outstanding ! = 0:
+                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:02:39,014 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:02:38.712300-127.0.0.1-cc0
+[DEBUG] 2021-08-13 12:02:46,724 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 12:03:24,720 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:03:24.710948-127.0.0.1-150
+[DEBUG] 2021-08-13 12:03:47,148 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 12:04:11,464 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:04:11.458523-127.0.0.1-979
+[DEBUG] 2021-08-13 12:04:48,126 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-13 12:04:49,150 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:04:49.143586-127.0.0.1-361
+[DEBUG] 2021-08-13 12:05:48,604 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:06:48,935 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:07:49,123 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:08:49,354 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:09:49,598 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:10:49,792 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:11:50,006 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:12:50,232 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:13:50,419 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:14:50,600 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:15:50,811 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:16:51,052 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:17:51,228 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:18:51,702 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:19:51,877 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:20:52,221 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:21:52,388 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:22:52,565 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:23:52,798 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:24:53,022 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:25:53,280 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:26:53,470 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:27:56,450 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:28:56,672 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:29:56,868 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:30:57,096 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:31:57,273 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:32:57,475 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:33:57,673 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:34:57,848 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:35:58,024 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:36:58,209 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:37:58,385 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:38:58,738 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:39:59,242 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:40:59,510 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:41:59,696 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:42:59,879 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:44:00,113 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:45:00,330 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:46:00,534 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:47:00,721 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:48:00,923 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:49:01,101 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:50:01,304 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:51:01,508 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:52:01,768 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:53:01,950 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:54:02,139 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:55:02,317 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:56:02,515 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:57:02,711 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:58:02,898 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 12:59:03,192 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:00:03,421 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:01:03,727 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:02:03,906 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:03:04,075 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:04:04,283 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:05:04,479 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:06:04,657 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:07:04,839 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:08:05,048 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-13 13:09:05,250 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management

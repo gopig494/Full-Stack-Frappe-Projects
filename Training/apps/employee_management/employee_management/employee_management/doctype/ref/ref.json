@@ -1,0 +1,58 @@
+{
+ "creation": "2021-08-12 11:14:37.588261",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "type",
+  "namee",
+  "total",
+  "outstanding",
+  "allocated"
+ ],
+ "fields": [
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "namee",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "type"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total"
+  },
+  {
+   "fieldname": "outstanding",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Outstanding"
+  },
+  {
+   "fieldname": "allocated",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Allocated"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-08-12 11:19:44.395398",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Ref",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

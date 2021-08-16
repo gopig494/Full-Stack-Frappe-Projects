@@ -1,0 +1,358 @@
+[ERROR] 2021-08-13 12:42:47,670 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"fghf\",\"order_item_id\":\"ghfgh\",\"order_item\":\"gfhfh\",\"paid_amount\":\"\",\"date\":\"2021-08-17\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 34, in after_insert
+    docInsert.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 905, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 17, in validate
+    d.allocated = float(self.paid_amount)
+ValueError: could not convert string to float: 
+[ERROR] 2021-08-13 12:42:47,819 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:42:47.671712-127.0.0.1-658
+[ERROR] 2021-08-13 12:45:05,037 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"ihjoi\",\"order_item_id\":\"trd\",\"order_item\":\"SERS\",\"paid_amount\":\"\",\"date\":\"2021-08-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 17
+    d.allocated = float(self.paid_amount)
+    ^
+IndentationError: unexpected indent
+[ERROR] 2021-08-13 12:45:05,199 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:45:05.038312-127.0.0.1-cf6
+[ERROR] 2021-08-13 12:45:46,105 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"ihjoi\",\"order_item_id\":\"trd\",\"order_item\":\"SERS\",\"paid_amount\":\"\",\"date\":\"2021-08-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 34, in after_insert
+    docInsert.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 905, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 17, in validate
+    d.allocated = float(self.paid_amount)
+ValueError: could not convert string to float: 
+[ERROR] 2021-08-13 12:45:46,252 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:45:46.105936-127.0.0.1-0ff
+[ERROR] 2021-08-13 12:51:37,912 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"ihjoi\",\"order_item_id\":\"trd\",\"order_item\":\"SERS\",\"paid_amount\":\"\",\"date\":\"2021-08-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 34, in after_insert
+    docInsert.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 905, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 16, in validate
+    if float(d.total_amount) >= float(self.paid_amount):
+ValueError: could not convert string to float: 
+[ERROR] 2021-08-13 12:51:38,086 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:51:37.912982-127.0.0.1-f72
+[ERROR] 2021-08-13 13:06:11,097 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"dfgdrg\",\"order_item_id\":\"dfgdg\",\"order_item\":\"fdgdfg\",\"paid_amount\":\"\",\"date\":\"2021-08-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 17
+    if flt(d.total_amount) => flt(self.paid_amount):
+                           ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 13:06:11,240 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 13:06:11.098374-127.0.0.1-f41
+[ERROR] 2021-08-13 13:09:09,049 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 2\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"dfgdrg\",\"order_item_id\":\"dfgdg\",\"order_item\":\"fdgdfg\",\"paid_amount\":\"\",\"date\":\"2021-08-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 34, in after_insert
+    docInsert.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 905, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 18, in validate
+    d.allocated = float(self.paid_amount)
+ValueError: could not convert string to float: 
+[ERROR] 2021-08-13 13:09:09,842 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 13:09:09.073746-127.0.0.1-05a

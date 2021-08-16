@@ -1,0 +1,53 @@
+{
+ "autoname": "CID.##",
+ "creation": "2021-08-05 18:09:19.889137",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "address",
+  "order_detail"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "order_detail",
+   "fieldtype": "Link",
+   "label": "Order Detail",
+   "options": "Order"
+  }
+ ],
+ "modified": "2021-08-05 18:12:27.519505",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Company",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

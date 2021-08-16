@@ -1,0 +1,56 @@
+[ERROR] 2021-08-16 12:36:56,398 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "4f20c66aaf"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+AttributeError: 'module' object has no attribute 'make_payment'
+[ERROR] 2021-08-16 12:36:56,548 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:36:56.413307-127.0.0.1-99f
+[ERROR] 2021-08-16 12:38:31,302 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "args": "",
+ "cmd": "frappe.model.mapper.make_mapped_doc",
+ "method": "employee_management.employee_management.doctype.order_menu_info.make_payment",
+ "selected_children": "{}",
+ "source_name": "4f20c66aaf"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
+    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
+AttributeError: 'module' object has no attribute 'make_payment'
+[ERROR] 2021-08-16 12:38:31,306 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-16 12:38:31.302618-127.0.0.1-637

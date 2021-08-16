@@ -1,0 +1,166 @@
+{
+ "creation": "2021-08-07 11:34:55.330171",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "id",
+  "date",
+  "section_break_3",
+  "dialog",
+  "column_break_4",
+  "msg_print",
+  "column_break_6",
+  "throw",
+  "column_break_8",
+  "prompt",
+  "column_break_11",
+  "confirm",
+  "column_break_13",
+  "warn",
+  "column_break_15",
+  "section_break_16",
+  "show_alert",
+  "column_break_18",
+  "show_progress",
+  "column_break_20",
+  "new_doc",
+  "column_break_22",
+  "multi_select_dialog"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Id"
+  },
+  {
+   "fieldname": "dialog",
+   "fieldtype": "Button",
+   "label": "Dialog"
+  },
+  {
+   "fieldname": "msg_print",
+   "fieldtype": "Button",
+   "label": "Msg Print"
+  },
+  {
+   "fieldname": "throw",
+   "fieldtype": "Button",
+   "label": "Throw"
+  },
+  {
+   "fieldname": "prompt",
+   "fieldtype": "Button",
+   "label": "Prompt"
+  },
+  {
+   "fieldname": "confirm",
+   "fieldtype": "Button",
+   "label": "Confirm"
+  },
+  {
+   "fieldname": "warn",
+   "fieldtype": "Button",
+   "label": "Warn"
+  },
+  {
+   "fieldname": "show_alert",
+   "fieldtype": "Button",
+   "label": "Show Alert"
+  },
+  {
+   "fieldname": "show_progress",
+   "fieldtype": "Button",
+   "label": "Show Progress"
+  },
+  {
+   "fieldname": "new_doc",
+   "fieldtype": "Button",
+   "label": "New Doc"
+  },
+  {
+   "fieldname": "multi_select_dialog",
+   "fieldtype": "Button",
+   "label": "Multi Select Dialog"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "modified": "2021-08-07 19:07:22.853932",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Dialog Api",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

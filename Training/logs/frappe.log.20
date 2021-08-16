@@ -1,0 +1,1419 @@
+[DEBUG] 2021-08-12 15:17:14,995 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:17:22,117 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 18, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Orderss" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:17:22,268 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:17:22.118114-127.0.0.1-7f8
+[DEBUG] 2021-08-12 15:18:15,247 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:18:20,185 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 18, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Ref" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:18:20,334 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:18:20.186046-127.0.0.1-ba3
+[DEBUG] 2021-08-12 15:19:15,437 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:20:15,625 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:21:15,890 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:22:16,069 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:23:16,275 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:24:16,481 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:25:10,382 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 19, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Ref" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:25:10,533 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:25:10.383239-127.0.0.1-b9a
+[DEBUG] 2021-08-12 15:25:16,669 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:26:16,926 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:26:26,487 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 19, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Ref" and r.r.namee=%s''',Orderss,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: type object 'Orderss' has no attribute 'translate'
+[ERROR] 2021-08-12 15:26:26,636 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:26:26.488822-127.0.0.1-fab
+[ERROR] 2021-08-12 15:26:35,139 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1009"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 44, in on_cancel
+    doc = get({"Payment Menu",payments[d].name})
+NameError: global name 'get' is not defined
+[ERROR] 2021-08-12 15:26:35,296 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:26:35.140101-127.0.0.1-de4
+[ERROR] 2021-08-12 15:27:10,557 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 19, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Ref" and r.r.namee=%s''',Orderss)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: type object 'Orderss' has no attribute 'translate'
+[ERROR] 2021-08-12 15:27:10,707 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:27:10.558381-127.0.0.1-3d6
+[DEBUG] 2021-08-12 15:27:17,187 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:27:54,218 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1009"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 44, in on_cancel
+    doc = self.get({"Payment Menu",payments[d].name})
+TypeError: list indices must be integers, not _dict
+[ERROR] 2021-08-12 15:27:54,360 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:27:54.219189-127.0.0.1-5c2
+[DEBUG] 2021-08-12 15:28:17,496 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:28:37,242 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1009"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 44, in on_cancel
+    doc = self.get({"Payment Menu",payments.name})
+AttributeError: 'list' object has no attribute 'name'
+[ERROR] 2021-08-12 15:28:37,388 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:28:37.243407-127.0.0.1-7cb
+[ERROR] 2021-08-12 15:29:09,160 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 19, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Orderss" and r.reference_name=%s''',orderss,as_dict=1)
+NameError: global name 'orderss' is not defined
+[ERROR] 2021-08-12 15:29:09,302 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:29:09.160775-127.0.0.1-d5c
+[DEBUG] 2021-08-12 15:29:17,686 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:29:27,140 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1009"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 44, in on_cancel
+    doc = self.get("Payment Menu",payments.name)
+AttributeError: 'list' object has no attribute 'name'
+[ERROR] 2021-08-12 15:29:27,303 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:29:27.141200-127.0.0.1-8b8
+[ERROR] 2021-08-12 15:29:54,721 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1009"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 45, in on_cancel
+    doc.docstatus = 1
+AttributeError: 'list' object has no attribute 'docstatus'
+[ERROR] 2021-08-12 15:29:54,864 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:29:54.722687-127.0.0.1-fb3
+[ERROR] 2021-08-12 15:30:09,979 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 19, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Orderss" and r.reference_name=%s''',as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 171, in sql
+    self._cursor.execute(query)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+ProgrammingError: (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%s' at line 1")
+[ERROR] 2021-08-12 15:30:10,128 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:30:09.980325-127.0.0.1-597
+[DEBUG] 2021-08-12 15:30:17,865 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:30:44,664 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 19, in on_cancel
+    result =frappe.db.sql('''select p.customer_name,p.payment_type,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Orderss" and r.reference_name=%s''')
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 171, in sql
+    self._cursor.execute(query)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 517, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 732, in _read_query_result
+    result.read()
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 1075, in read
+    first_packet = self.connection._read_packet()
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 684, in _read_packet
+    packet.check_error()
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/protocol.py", line 220, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+ProgrammingError: (1064, u"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%s' at line 1")
+[ERROR] 2021-08-12 15:30:44,809 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:30:44.664809-127.0.0.1-9c8
+[DEBUG] 2021-08-12 15:31:18,054 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:32:18,249 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:33:04,596 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 18, in on_cancel
+    for d in self.get("ref"):
+TypeError: 'NoneType' object is not iterable
+[ERROR] 2021-08-12 15:33:04,736 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:33:04.596853-127.0.0.1-1a2
+[DEBUG] 2021-08-12 15:33:18,435 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:34:00,811 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 18, in on_cancel
+    for d in self.get("orderss"):
+TypeError: 'NoneType' object is not iterable
+[ERROR] 2021-08-12 15:34:00,953 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:34:00.811630-127.0.0.1-2fd
+[DEBUG] 2021-08-12 15:34:18,616 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:35:18,804 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:36:19,011 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:36:31,942 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 18, in on_cancel
+    for d in self.get("sam"):
+TypeError: 'NoneType' object is not iterable
+[ERROR] 2021-08-12 15:36:32,084 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:36:31.943476-127.0.0.1-abd
+[DEBUG] 2021-08-12 15:37:19,188 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:38:19,378 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:39:19,575 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:39:51,275 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 21, in on_cancel
+    frappe.msgprint(frappe._(hii))
+NameError: global name 'hii' is not defined
+[ERROR] 2021-08-12 15:39:51,423 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:39:51.276414-127.0.0.1-d2c
+[DEBUG] 2021-08-12 15:40:19,776 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:40:20,283 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1010"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 34, in cancel
+    doc = frappe.get_doc(doctype, name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 44
+    doc = frappe.get_doc("doctype":"Payment Menu","name":payments[d].name)
+                                  ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-12 15:40:20,433 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:40:20.284411-127.0.0.1-a57
+[ERROR] 2021-08-12 15:40:53,969 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-12 12:13:58.083325",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Order Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 44
+    doc = frappe.get("doctype":"Payment Menu","name":payments.name)
+                              ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-12 15:40:54,303 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:40:53.972158-127.0.0.1-8cf
+[DEBUG] 2021-08-12 15:41:19,977 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:42:20,156 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:43:20,329 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:43:27,325 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Order Menu",
+ "name": "Order-ID1010"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu/order_menu.py", line 46, in on_cancel
+    for d in len(payments):
+TypeError: 'int' object is not iterable
+[ERROR] 2021-08-12 15:43:27,485 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:43:27.326007-127.0.0.1-a3c
+[ERROR] 2021-08-12 15:43:40,914 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 20, in on_cancel
+    if index!=0:
+NameError: global name 'index' is not defined
+[ERROR] 2021-08-12 15:43:41,075 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:43:40.915438-127.0.0.1-5cc
+[DEBUG] 2021-08-12 15:44:20,517 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:44:23,997 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 20, in on_cancel
+    payments=frappe.db.sql('''select p.name,p.posting_date,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Orderss" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:44:24,167 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:44:23.999003-127.0.0.1-050
+[DEBUG] 2021-08-12 15:45:20,693 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:46:20,872 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:46:44,936 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 21, in on_cancel
+    delete_user(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 25, in delete_user
+    payments=frappe.db.sql('''select p.name,p.posting_date,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="Orderss" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:46:45,107 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:46:44.937740-127.0.0.1-0ca
+[DEBUG] 2021-08-12 15:47:21,060 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-08-12 15:47:26,511 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 21, in on_cancel
+    delete_user(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 25, in delete_user
+    payments=frappe.db.sql('''select p.name,p.posting_date,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="ref" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:47:26,660 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:47:26.511880-127.0.0.1-0e7
+[ERROR] 2021-08-12 15:48:08,766 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cmd": "frappe.desk.form.save.cancel",
+ "doctype": "Orderss",
+ "name": "ORD007"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 37, in cancel
+    doc.cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 877, in cancel
+    self._cancel()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 867, in _cancel
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 937, in run_post_save_methods
+    self.run_method("on_cancel")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 21, in on_cancel
+    delete_user(self)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 25, in delete_user
+    payments=frappe.db.sql('''select p.name,p.posting_date,p.paid_amount,r.outstanding_amount from `tabPayments` p, `tabRef` r where r.parent=p.name and r.reference_doctype="orderss" and r.reference_name=%s''',self,as_dict=1)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 156, in sql
+    self._cursor.execute(query, values)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 168, in execute
+    query = self.mogrify(query, args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 147, in mogrify
+    query = query % self._escape_args(args, conn)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in _escape_args
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/cursors.py", line 122, in <genexpr>
+    return tuple(conn.literal(arg) for arg in args)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 467, in literal
+    return self.escape(obj, self.encoders)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/connections.py", line 460, in escape
+    return converters.escape_item(obj, self.charset, mapping=mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 27, in escape_item
+    val = encoder(val, mapping)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 118, in escape_unicode
+    return u"'%s'" % _escape_unicode(value)
+  File "/home/server-admin/Projects/Gopi/Training/env/local/lib/python2.7/site-packages/pymysql/converters.py", line 73, in _escape_unicode
+    return value.translate(_escape_table)
+AttributeError: 'Orderss' object has no attribute 'translate'
+[ERROR] 2021-08-12 15:48:08,919 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-12 15:48:08.766902-127.0.0.1-3b3
+[DEBUG] 2021-08-12 15:48:21,280 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:49:21,493 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-08-12 15:50:21,723 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management

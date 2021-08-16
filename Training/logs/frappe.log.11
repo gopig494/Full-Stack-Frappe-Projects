@@ -1,0 +1,1093 @@
+[ERROR] 2021-08-13 12:07:19,946 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"allow_import\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"track_changes\":1,\"modified\":\"2021-08-13 12:06:32.402597\",\"allow_auto_repeat\":0,\"sort_order\":\"DESC\",\"owner\":\"Administrator\",\"editable_grid\":1,\"in_create\":0,\"is_tree\":0,\"document_type\":\"\",\"modified_by\":\"Administrator\",\"track_views\":0,\"allow_rename\":0,\"custom\":0,\"max_attachments\":0,\"docstatus\":0,\"is_submittable\":0,\"sort_field\":\"modified\",\"allow_copy\":0,\"engine\":\"InnoDB\",\"read_only\":0,\"allow_guest_to_view\":0,\"istable\":0,\"allow_events_in_timeline\":0,\"has_web_view\":0,\"show_name_in_global_search\":0,\"beta\":0,\"module\":\"Employee Management\",\"show_preview_popup\":0,\"doctype\":\"DocType\",\"autoname\":\"PAY-DETAIL-!.###\",\"issingle\":0,\"name\":\"Payment Menu\",\"idx\":0,\"hide_toolbar\":0,\"track_seen\":0,\"name_case\":\"\",\"fields\":[{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"a48d7ef3df\",\"idx\":1,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_1\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"PAYMENT MENU\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"faa07e595c\",\"idx\":2,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"payment_menu\",\"fieldtype\":\"Heading\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"e59bbfb308\",\"idx\":3,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_3\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"74b62c74ed\",\"idx\":4,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"section_break_4\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"TYPE OF PAYMENT\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"b5f79f9797\",\"idx\":5,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"type_of_payment\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Payment Status\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"00368d9d99\",\"idx\":6,\"default\":\"Unpaid\",\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"payment_status\",\"fieldtype\":\"Select\",\"options\":\"Unpaid\\nPartialy Paid\\nPaid\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Mode Of Payment\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"dc45186a66\",\"idx\":7,\"default\":\"Cash\",\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"mode_of_payment\",\"fieldtype\":\"Select\",\"options\":\"Cash\\nChecks\\nDebit cards\\nCredit cards\\nMobile payments\\nElectronic bank transfers\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"6c786974df\",\"idx\":8,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"column_break_7\",\"fieldtype\":\"Column Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Posting Date\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"5f27a56718\",\"idx\":9,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"posting_date\",\"fieldtype\":\"Date\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"4a85340f73\",\"idx\":10,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"section_break_11\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"PAYMENT FROM\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"cc74c55276\",\"idx\":11,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"payment_from\",\"fieldtype\":\"Heading\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Party Name\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"4828a95a11\",\"idx\":12,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"party_name\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Party\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"b69f083cb1\",\"idx\":13,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"party\",\"fieldtype\":\"Data\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"ba19a5443f\",\"idx\":14,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"section_break_15\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"AMOUNT\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"e894c48dd4\",\"idx\":15,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"amount\",\"fieldtype\":\"Heading\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Paid Amount\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"e49473b55c\",\"idx\":16,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"paid_amount\",\"fieldtype\":\"Currency\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"8695a2f391\",\"idx\":17,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"section_break_18\",\"fieldtype\":\"Section Break\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"REFERENCE\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"5354b7406c\",\"idx\":18,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"reference\",\"fieldtype\":\"Heading\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Allocate Payment Amout\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"177b6500e5\",\"idx\":19,\"default\":\"0\",\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"allocate_payment_amout\",\"fieldtype\":\"Check\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":0,\"creation\":\"2021-08-11 12:06:45.092766\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":0,\"print_hide\":0,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Payment Reference\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"depends_on\":\"allocate_payment_amout\",\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"precision\":\"\",\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"85b7c34dcb\",\"idx\":20,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"payment_reference\",\"fieldtype\":\"Table\",\"options\":\"Reference Menu\",\"report_hide\":0,\"parentfield\":\"fields\"},{\"collapsible\":0,\"in_preview\":0,\"no_copy\":1,\"creation\":\"2021-08-13 11:45:49.761664\",\"translatable\":0,\"reqd\":0,\"in_list_view\":0,\"in_standard_filter\":0,\"owner\":\"Administrator\",\"ignore_xss_filter\":0,\"in_global_search\":0,\"read_only\":1,\"print_hide\":1,\"show_preview_popup\":0,\"modified_by\":\"Administrator\",\"fetch_if_empty\":0,\"ignore_user_permissions\":0,\"length\":0,\"label\":\"Amended From\",\"print_hide_if_no_value\":0,\"allow_bulk_edit\":0,\"set_only_once\":0,\"docstatus\":0,\"hidden\":0,\"in_filter\":0,\"permlevel\":0,\"columns\":0,\"bold\":0,\"parent\":\"Payment Menu\",\"search_index\":0,\"allow_on_submit\":0,\"remember_last_selected_value\":0,\"doctype\":\"DocField\",\"unique\":0,\"name\":\"b6df1a242e\",\"idx\":21,\"allow_in_quick_entry\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"parenttype\":\"DocType\",\"fieldname\":\"amended_from\",\"fieldtype\":\"Link\",\"options\":\"Payment Menu\",\"report_hide\":0,\"parentfield\":\"fields\"}],\"permissions\":[{\"creation\":\"2021-08-11 12:06:45.092766\",\"share\":1,\"doctype\":\"DocPerm\",\"owner\":\"Administrator\",\"export\":1,\"cancel\":0,\"set_user_permissions\":0,\"modified_by\":\"Administrator\",\"create\":1,\"submit\":0,\"write\":1,\"role\":\"System Manager\",\"print\":1,\"docstatus\":0,\"permlevel\":0,\"parent\":\"Payment Menu\",\"read\":1,\"import\":0,\"report\":1,\"name\":\"a25e259d89\",\"idx\":1,\"amend\":0,\"modified\":\"2021-08-13 12:06:32.402597\",\"email\":1,\"parenttype\":\"DocType\",\"parentfield\":\"permissions\",\"if_owner\":0,\"delete\":1}],\"quick_entry\":1,\"__last_sync_on\":\"2021-08-13T06:37:11.352Z\",\"__unsaved\":1}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 932, in run_post_save_methods
+    self.run_method("on_update")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 300, in on_update
+    self.run_module_method("on_doctype_update")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/doctype/doctype.py", line 369, in run_module_method
+    module = load_doctype_module(self.name, self.module)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 24
+    if self.paid_amount ! = 0 and d.outstanding ! = 0:
+                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:08:06,850 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"fgeg\",\"order_item_id\":\"dfrtger\",\"order_item\":\"dfrter\",\"paid_amount\":456,\"date\":\"2021-08-03\",\"price\":456456}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 24
+    if self.paid_amount ! = 0 and d.outstanding ! = 0:
+                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:08:14,848 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 24
+    if self.paid_amount ! = 0 and d.outstanding ! = 0:
+                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:08:48,787 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 25
+    self.payment_status = Partialy Paid
+                                      ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:08:49,911 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:08:48.788434-127.0.0.1-107
+[ERROR] 2021-08-13 12:08:57,738 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"fgeg\",\"order_item_id\":\"dfrtger\",\"order_item\":\"dfrter\",\"paid_amount\":456,\"date\":\"2021-08-03\",\"price\":456456}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 25
+    self.payment_status = Partialy Paid
+                                      ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:08:57,751 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:08:57.738581-127.0.0.1-18e
+[ERROR] 2021-08-13 12:10:19,093 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 24
+    if float(self.paid_amount) != 0 float(and d.outstanding) != 0:
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:10:19,640 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:10:19.093627-127.0.0.1-31c
+[ERROR] 2021-08-13 12:12:45,851 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 21
+    self.payment_status = :"Unpaid"
+                          ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:12:46,150 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:12:45.851799-127.0.0.1-a9e
+[ERROR] 2021-08-13 12:13:28,304 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 21
+    self.payment_status = :"Unpaid"
+                          ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:13:28,517 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:13:28.308266-127.0.0.1-d6a
+[ERROR] 2021-08-13 12:13:59,516 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 27
+    else:
+    ^
+IndentationError: expected an indented block
+[ERROR] 2021-08-13 12:13:59,853 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:13:59.517247-127.0.0.1-4c5
+[ERROR] 2021-08-13 12:14:59,827 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 12:11:27.741178",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 22
+    if d.outstanding == 0 :
+     ^
+IndentationError: expected an indented block
+[ERROR] 2021-08-13 12:15:00,024 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:14:59.827870-127.0.0.1-cfe
+[ERROR] 2021-08-13 12:15:33,081 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 12:11:27.741178",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 22
+    if d.outstanding == 0:
+     ^
+IndentationError: expected an indented block
+[ERROR] 2021-08-13 12:15:33,327 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:15:33.086159-127.0.0.1-36a
+[ERROR] 2021-08-13 12:16:14,978 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 12:11:27.741178",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 21
+    self.payment_status = :"Unpaid"
+                          ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:16:15,336 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:16:14.980076-127.0.0.1-23f
+[ERROR] 2021-08-13 12:17:06,783 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 12:11:27.741178",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 24
+    if float(self.paid_amount) != 0 float(and d.outstanding) != 0:
+                                        ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:17:07,005 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:17:06.787671-127.0.0.1-2ea
+[ERROR] 2021-08-13 12:26:39,697 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "cached_timestamp": "2021-08-13 12:22:25.882933",
+ "cmd": "frappe.desk.form.load.getdoctype",
+ "doctype": "Payment Menu",
+ "with_parent": "1"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
+    docs = get_meta_bundle(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
+    bundle = [frappe.desk.form.meta.get_meta(doctype)]
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
+    meta = FormMeta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
+    self.load_assets()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
+    self.load_templates()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
+    module = load_doctype_module(self.name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 12
+    if self.paid_amount or self.paid_amount =0:
+                                            ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:26:39,903 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:26:39.699730-127.0.0.1-6cb
+[ERROR] 2021-08-13 12:29:04,787 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 4\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"rsdfg\",\"order_item_id\":\"dfg\",\"order_item\":\"dfgdf\",\"paid_amount\":\"\",\"date\":\"2021-08-09\",\"price\":11}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 16
+    if d.total_amount >= self.paid_amount or self.paid_amount = 0:
+                                                              ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:29:04,930 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:29:04.788027-127.0.0.1-fc0
+[ERROR] 2021-08-13 12:31:18,029 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"fghfh\",\"order_item_id\":\"fghfh\",\"order_item\":\"fghfgh\",\"paid_amount\":\"\",\"date\":\"2021-05-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 16
+    if d.total_amount >= self.paid_amount or self.paid_amount = int(0):
+                                                              ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:31:18,193 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:31:18.030584-127.0.0.1-6be
+[ERROR] 2021-08-13 12:31:56,658 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"fghfh\",\"order_item_id\":\"fghfh\",\"order_item\":\"fghfgh\",\"paid_amount\":\"\",\"date\":\"2021-05-04\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 34, in after_insert
+    docInsert.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 905, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 17, in validate
+    d.allocated = float(self.paid_amount)
+ValueError: could not convert string to float: 
+[ERROR] 2021-08-13 12:31:56,824 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:31:56.659267-127.0.0.1-2dd
+[ERROR] 2021-08-13 12:33:24,873 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 5\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"yfty\",\"order_item_id\":\"rtyrt\",\"order_item\":\"rtyry\",\"paid_amount\":\"\",\"date\":\"2021-05-03\",\"price\":121}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 34, in after_insert
+    docInsert.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 905, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 17, in validate
+    d.allocated = float(self.paid_amount)
+ValueError: could not convert string to float: 
+[ERROR] 2021-08-13 12:33:25,023 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:33:24.874516-127.0.0.1-a32
+[ERROR] 2021-08-13 12:35:48,137 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 5\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"yfty\",\"order_item_id\":\"rtyrt\",\"order_item\":\"rtyry\",\"paid_amount\":\"\",\"date\":\"2021-05-03\",\"price\":121}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 22
+    else:
+       ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:35:48,298 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:35:48.138640-127.0.0.1-c35
+[ERROR] 2021-08-13 12:36:24,552 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"123\",\"order_item_id\":\"123123\",\"order_item\":\"12312\",\"paid_amount\":123,\"date\":\"2021-08-24\",\"price\":123123}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 22
+    else:
+       ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:36:24,568 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:36:24.552716-127.0.0.1-db4
+[ERROR] 2021-08-13 12:38:23,423 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"123\",\"order_item_id\":\"123123\",\"order_item\":\"12312\",\"paid_amount\":123,\"date\":\"2021-08-24\",\"price\":123123}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 22
+    else:
+       ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:38:23,574 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:38:23.424444-127.0.0.1-8be
+[ERROR] 2021-08-13 12:41:03,695 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Save",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"docstatus\":0,\"doctype\":\"Order Menu Info\",\"name\":\"New Order Menu Info 1\",\"__islocal\":1,\"__unsaved\":1,\"owner\":\"Administrator\",\"customer_name\":\"fghf\",\"order_item_id\":\"ghfgh\",\"order_item\":\"gfhfh\",\"paid_amount\":\"\",\"date\":\"2021-08-17\",\"price\":120}"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
+    response = frappe.api.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
+    return frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
+    doc.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 254, in insert
+    self.run_method("after_insert")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 32, in after_insert
+    "allocate_payment_amout": True,})
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
+    doc = frappe.model.document.get_doc(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
+    controller = get_controller(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
+    module = load_doctype_module(doctype, module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
+    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
+    return importlib.import_module(modulename)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payment_menu/payment_menu.py", line 22
+    else:
+       ^
+SyntaxError: invalid syntax
+[ERROR] 2021-08-13 12:41:03,882 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-08-13 12:41:03.696759-127.0.0.1-c57

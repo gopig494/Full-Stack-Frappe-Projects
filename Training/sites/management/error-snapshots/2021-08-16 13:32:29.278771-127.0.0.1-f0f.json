@@ -1,0 +1,203 @@
+{
+ "etype": "AttributeError",
+ "evalue": "AttributeError(\"'NoneType' object has no attribute 'options'\",)",
+ "exception": {
+  "args": "(\"'NoneType' object has no attribute 'options'\",)",
+  "message": "\"'NoneType' object has no attribute 'options'\""
+ },
+ "frames": [
+  {
+   "call": "(request=<Request 'http://192.168.0.156:8000/api/method/frappe.model.mapper.make_mapped_doc' [POST]>)",
+   "dump": {
+    "frappe. api": "<module 'frappe.api' from '/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.pyc'>",
+    "frappe.api. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.pyc'>",
+    "response": "None"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py",
+   "func": "application",
+   "lines": {
+    "65": "",
+    "66": "\t\telif request.path.startswith(\"/api/\"):",
+    "67": "\t\t\tresponse = frappe.api.handle()",
+    "68": "",
+    "69": "\t\telif request.path.startswith('/backups'):"
+   },
+   "lnum": 67
+  },
+  {
+   "call": "()",
+   "dump": {
+    "frappe. handler": "<module 'frappe.handler' from '/home/server-admi...ts/Gopi/Training/apps/frappe/frappe/handler.pyc'>",
+    "frappe.handler. handle": "<function handle>",
+    "global frappe": "<module 'frappe' from '/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.pyc'>"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py",
+   "func": "handle",
+   "lines": {
+    "57": "\tif call==\"method\":",
+    "58": "\t\tfrappe.local.form_dict.cmd = doctype",
+    "59": "\t\treturn frappe.handler.handle()",
+    "60": "",
+    "61": "\telif call==\"resource\":"
+   },
+   "lnum": 59
+  },
+  {
+   "call": "()",
+   "dump": {
+    "cmd": "u'frappe.model.mapper.make_mapped_doc'",
+    "data": "None",
+    "global execute_cmd": "<function execute_cmd>"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py",
+   "func": "handle",
+   "lines": {
+    "22": "",
+    "23": "\tif cmd!='login':",
+    "24": "\t\tdata = execute_cmd(cmd)",
+    "25": "",
+    "26": "\t# data can be an empty string or list which are valid responses"
+   },
+   "lnum": 24
+  },
+  {
+   "call": "(cmd=u'frappe.model.mapper.make_mapped_doc', from_async=False)",
+   "dump": {
+    "frappe. call": "<function call>",
+    "frappe. form_dict": "{'cmd': u'frappe.model.mapper.make_mapped_doc', ...u_info.make_payment', 'selected_children': u'{}'}",
+    "global frappe": "<module 'frappe' from '/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.pyc'>",
+    "method": "<function make_mapped_doc>"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py",
+   "func": "execute_cmd",
+   "lines": {
+    "62": "\tis_valid_http_method(method)",
+    "63": "",
+    "64": "\treturn frappe.call(method, **frappe.form_dict)",
+    "65": "",
+    "66": "def is_whitelisted(method):"
+   },
+   "lnum": 64
+  },
+  {
+   "call": "(fn=<function make_mapped_doc>, *args=(), **kwargs={'args': u'', 'cmd': u'frappe.model.mapper.make_mapped_doc', 'method': u'employee_management.employee_management.doctype.order_menu_info.order_menu_info.make_payment', 'selected_children': u'{}', 'source_name': u'2274724017'})",
+   "dump": {
+    "args": "()",
+    "fn": "<function make_mapped_doc>",
+    "newargs": "{'args': u'', 'method': u'employee_management.employee_management.doctype.order_menu_info.order_menu_info.make_payment', 'selected_children': u'{}', 'source_name': u'2274724017'}"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py",
+   "func": "call",
+   "lines": {
+    "1073": "\tnewargs = get_newargs(fn, kwargs)",
+    "1074": "",
+    "1075": "\treturn fn(*args, **newargs)",
+    "1076": "",
+    "1077": "def get_newargs(fn, kwargs):"
+   },
+   "lnum": 1075
+  },
+  {
+   "call": "(method=<function make_payment>, source_name=u'2274724017', selected_children={}, args=u'')",
+   "dump": {
+    "method": "<function make_payment>",
+    "source_name": "u'2274724017'"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py",
+   "func": "make_mapped_doc",
+   "lines": {
+    "28": "\tfrappe.flags.selected_children = selected_children or None",
+    "29": "",
+    "30": "\treturn method(source_name)",
+    "31": "",
+    "32": "@frappe.whitelist()"
+   },
+   "lnum": 30
+  },
+  {
+   "call": "(self=u'2274724017')",
+   "dump": {
+    "re": "<employee_management.employee_management.doctype...r_menu_info.order_menu_info.OrderMenuInfo object>",
+    "re. name": "u'2274724017'",
+    "result": "<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>",
+    "result. append": "<bound method PaymentMenu.append of <employee_ma...pe.payment_menu.payment_menu.PaymentMenu object>>"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py",
+   "func": "make_payment",
+   "lines": {
+    "82": "",
+    "83": "",
+    "84": "",
+    "85": "\tresult.append(\"ref\",{\"type\":\"Order Menu Info\",\"name1\":re.name})",
+    "86": "\treturn result"
+   },
+   "lnum": 85
+  },
+  {
+   "call": "(self=<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>, key=u'ref', value={u'name1': u'2274724017', u'type': u'Order Menu Info'})",
+   "dump": {
+    "key": "u'ref'",
+    "self": "<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>",
+    "self. _init_child": "<bound method PaymentMenu._init_child of <employ...pe.payment_menu.payment_menu.PaymentMenu object>>",
+    "value": "{u'name1': u'2274724017', u'type': u'Order Menu Info'}"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py",
+   "func": "append",
+   "lines": {
+    "148": "\t\t\tif not self.__dict__.get(key):",
+    "149": "\t\t\t\tself.__dict__[key] = []",
+    "150": "\t\t\tvalue = self._init_child(value, key)",
+    "151": "\t\t\tself.__dict__[key].append(value)",
+    "152": ""
+   },
+   "lnum": 150
+  },
+  {
+   "call": "(self=<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>, value={u'name1': u'2274724017', u'type': u'Order Menu Info'}, key=u'ref')",
+   "dump": {
+    "key": "u'ref'",
+    "self": "<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>",
+    "self. get_table_field_doctype": "<bound method PaymentMenu.get_table_field_doctyp...pe.payment_menu.payment_menu.PaymentMenu object>>",
+    "value": "{u'name1': u'2274724017', u'type': u'Order Menu Info'}"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py",
+   "func": "_init_child",
+   "lines": {
+    "183": "\t\tif not isinstance(value, BaseDocument):",
+    "184": "\t\t\tif \"doctype\" not in value or value['doctype'] is None:",
+    "185": "\t\t\t\tvalue[\"doctype\"] = self.get_table_field_doctype(key)",
+    "186": "\t\t\t\tif not value[\"doctype\"]:",
+    "187": "\t\t\t\t\traise AttributeError(key)"
+   },
+   "lnum": 185
+  },
+  {
+   "call": "(self=<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>, fieldname=u'ref')",
+   "dump": {
+    ").options": "undefined",
+    "fieldname": "u'ref'",
+    "self": "<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>",
+    "self. meta": "<frappe.model.meta.Meta object>",
+    "self.meta. get_field": "<bound method Meta.get_field of <frappe.model.meta.Meta object>>"
+   },
+   "file": "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py",
+   "func": "get_table_field_doctype",
+   "lines": {
+    "297": "",
+    "298": "\tdef get_table_field_doctype(self, fieldname):",
+    "299": "\t\treturn self.meta.get_field(fieldname).options",
+    "300": "",
+    "301": "\tdef get_parentfield_of_doctype(self, doctype):"
+   },
+   "lnum": 299
+  }
+ ],
+ "locals": {
+  "fieldname": "ref",
+  "self": "<employee_management.employee_management.doctype.payment_menu.payment_menu.PaymentMenu object>"
+ },
+ "pyver": "Python 2.7.12: /home/server-admin/Projects/Gopi/Training/env/bin/python (prefix: /home/server-admin/Projects/Gopi/Training/env)",
+ "timestamp": "2021-08-16 13:32:29.278941",
+ "traceback": "Traceback (most recent call last):\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py\", line 67, in application\n    response = frappe.api.handle()\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py\", line 59, in handle\n    return frappe.handler.handle()\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py\", line 24, in handle\n    data = execute_cmd(cmd)\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py\", line 64, in execute_cmd\n    return frappe.call(method, **frappe.form_dict)\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py\", line 1075, in call\n    return fn(*args, **newargs)\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py\", line 30, in make_mapped_doc\n    return method(source_name)\n  File \"/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py\", line 85, in make_payment\n    result.append(\"ref\",{\"type\":\"Order Menu Info\",\"name1\":re.name})\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py\", line 150, in append\n    value = self._init_child(value, key)\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py\", line 185, in _init_child\n    value[\"doctype\"] = self.get_table_field_doctype(key)\n  File \"/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py\", line 299, in get_table_field_doctype\n    return self.meta.get_field(fieldname).options\nAttributeError: 'NoneType' object has no attribute 'options'\n"
+}

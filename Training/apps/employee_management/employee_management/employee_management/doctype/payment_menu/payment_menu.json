@@ -1,0 +1,173 @@
+{
+ "autoname": "PAY-DETAIL-!.###",
+ "creation": "2021-08-11 12:06:45.092766",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "payment_menu",
+  "column_break_3",
+  "section_break_4",
+  "type_of_payment",
+  "payment_status",
+  "payment_type",
+  "mode_of_payment",
+  "column_break_7",
+  "posting_date",
+  "section_break_11",
+  "payment_from",
+  "party_name",
+  "party",
+  "section_break_15",
+  "amount",
+  "paid_amount",
+  "section_break_18",
+  "reference",
+  "allocate_payment_amout",
+  "payment_reference",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "type_of_payment",
+   "fieldtype": "Section Break",
+   "label": "TYPE OF PAYMENT"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "default": "Cash",
+   "fieldname": "mode_of_payment",
+   "fieldtype": "Select",
+   "label": "Mode Of Payment",
+   "options": "Cash\nChecks\nDebit cards\nCredit cards\nMobile payments\nElectronic bank transfers"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "payment_from",
+   "fieldtype": "Heading",
+   "label": "PAYMENT FROM"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Data",
+   "label": "Party Name"
+  },
+  {
+   "fieldname": "party",
+   "fieldtype": "Data",
+   "label": "Party"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Heading",
+   "label": "AMOUNT"
+  },
+  {
+   "fieldname": "paid_amount",
+   "fieldtype": "Currency",
+   "label": "Paid Amount"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Heading",
+   "label": "REFERENCE"
+  },
+  {
+   "depends_on": "allocate_payment_amout",
+   "fieldname": "payment_reference",
+   "fieldtype": "Table",
+   "label": "Payment Reference",
+   "options": "Reference Menu"
+  },
+  {
+   "default": "0",
+   "fieldname": "allocate_payment_amout",
+   "fieldtype": "Check",
+   "label": "Allocate Payment Amout"
+  },
+  {
+   "fieldname": "payment_menu",
+   "fieldtype": "Heading",
+   "label": "PAYMENT MENU"
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Unpaid",
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Unpaid\nPartialy Paid\nPaid"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Payment Menu",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Pay",
+   "fieldname": "payment_type",
+   "fieldtype": "Select",
+   "label": "Payment Type",
+   "options": "Pay\nRecive"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-08-16 13:33:17.515089",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Payment Menu",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,86 @@
+{
+ "creation": "2021-08-10 14:00:40.697547",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "phone_number",
+  "validate_number",
+  "min_len",
+  "max_len",
+  "password",
+  "validate_password",
+  "min_leng",
+  "max_leng"
+ ],
+ "fields": [
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Heading",
+   "label": "Phone Number"
+  },
+  {
+   "depends_on": "validate_number",
+   "fieldname": "min_len",
+   "fieldtype": "Int",
+   "label": "Min Len"
+  },
+  {
+   "depends_on": "validate_number",
+   "fieldname": "max_len",
+   "fieldtype": "Int",
+   "label": "Max Len"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Heading",
+   "label": "Password"
+  },
+  {
+   "depends_on": "validate_password",
+   "fieldname": "min_leng",
+   "fieldtype": "Data",
+   "label": "Min Leng"
+  },
+  {
+   "depends_on": "validate_password",
+   "fieldname": "max_leng",
+   "fieldtype": "Data",
+   "label": "Max Leng"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_number",
+   "fieldtype": "Check",
+   "label": "Validate number"
+  },
+  {
+   "default": "0",
+   "fieldname": "validate_password",
+   "fieldtype": "Check",
+   "label": "Validate Password"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2021-08-10 14:49:10.482930",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Customer Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

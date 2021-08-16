@@ -1,0 +1,69 @@
+{
+ "autoname": "Prompt",
+ "creation": "2021-08-10 13:30:08.366986",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "mobile_number",
+  "e_mail_id",
+  "password",
+  "assign_role"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "e_mail_id",
+   "fieldtype": "Data",
+   "label": "E-Mail Id",
+   "options": "Email"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assign_role",
+   "fieldtype": "Data",
+   "label": "Assign Role"
+  }
+ ],
+ "modified": "2021-08-11 10:58:55.174795",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Customer",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

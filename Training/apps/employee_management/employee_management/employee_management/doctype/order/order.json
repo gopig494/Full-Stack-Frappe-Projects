@@ -1,0 +1,255 @@
+{
+ "_liked_by": "[\"Administrator\"]",
+ "autoname": "Order-Id.###",
+ "creation": "2021-08-05 14:55:44.496732",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "order_detail",
+  "order_no",
+  "order_date",
+  "section_break_1_section",
+  "sold_to",
+  "first_name",
+  "last_name",
+  "company",
+  "address",
+  "city",
+  "pincode",
+  "column_break_10",
+  "ship_to",
+  "first_name1",
+  "last_name1",
+  "company1",
+  "address1",
+  "city1",
+  "pincode1",
+  "section_break_16",
+  "payment_method",
+  "option",
+  "column_break_19",
+  "shipping_method",
+  "flate_rate",
+  "section_break_22",
+  "product_detail",
+  "product_detail1",
+  "section_break_25",
+  "column_break_26",
+  "column_break_27",
+  "subtotal",
+  "discount",
+  "shipping_and_handling",
+  "grand_total"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "order_detail",
+   "fieldtype": "Heading",
+   "label": "Order Detail"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "order_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order No"
+  },
+  {
+   "fieldname": "order_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order Date"
+  },
+  {
+   "bold": 1,
+   "fieldname": "sold_to",
+   "fieldtype": "Heading",
+   "label": "Sold To"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": " Address"
+  },
+  {
+   "fieldname": "section_break_1_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "ship_to",
+   "fieldtype": "Heading",
+   "label": "Ship To"
+  },
+  {
+   "fieldname": "first_name1",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name1",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "address1",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "payment_method",
+   "fieldtype": "Heading",
+   "label": "Payment Method "
+  },
+  {
+   "description": "Select Your Method Of Payment",
+   "fieldname": "option",
+   "fieldtype": "Select",
+   "label": "Option",
+   "options": "Cash On Delivery\nCredit Card\nDebit Card\nUPI"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "shipping_method",
+   "fieldtype": "Heading",
+   "label": "Shipping Method"
+  },
+  {
+   "bold": 1,
+   "default": "Fixted",
+   "description": "(Total Shipping Charges 1000$)",
+   "fieldname": "flate_rate",
+   "fieldtype": "Read Only",
+   "label": "Flate Rate"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "subtotal",
+   "fieldtype": "Currency",
+   "label": "Subtotal :"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "discount",
+   "fieldtype": "Currency",
+   "label": "Discount :"
+  },
+  {
+   "fieldname": "shipping_and_handling",
+   "fieldtype": "Currency",
+   "label": "Shipping & Handling :"
+  },
+  {
+   "fieldname": "grand_total",
+   "fieldtype": "Currency",
+   "label": "Grand Total"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "pincode",
+   "fieldtype": "Int",
+   "label": "PinCode"
+  },
+  {
+   "fieldname": "city1",
+   "fieldtype": "Data",
+   "label": "City"
+  },
+  {
+   "fieldname": "pincode1",
+   "fieldtype": "Int",
+   "label": "PinCode"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "fieldname": "company1",
+   "fieldtype": "Data",
+   "label": "Company"
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_detail",
+   "fieldtype": "Heading",
+   "label": "Product Detail"
+  },
+  {
+   "fieldname": "product_detail1",
+   "fieldtype": "Table",
+   "options": "Product Detail"
+  }
+ ],
+ "modified": "2021-08-06 13:58:42.404326",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Order",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}
