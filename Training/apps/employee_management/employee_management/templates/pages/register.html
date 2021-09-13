@@ -1,0 +1,35 @@
+{% extends "templates/web.html" %}
+{% block page_content %}
+
+<form style="width:300px">
+  <div class="form-group">
+    <label for="fname">First Name:</label>
+    <input type="text" class="form-control" id="fname" name="fname" required>
+    <span id="fname">Name is required. Please enter your response.</span>
+  </div>
+  <div class="form-group">
+    <label for="lname">Last Name:</label>
+    <input type="text" class="form-control" id="lname" name="lname" required>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone:</label>
+    <input type="number" class="form-control" id="phone" name="phone" max="10">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input type="email" class="form-control " id="email" name="email" required>
+    <span id="email"></span>
+  </div>
+  <div class="form-group">
+    <label for="pass1">Password:</label>
+    <input type="password" class="form-control" id="pass1" name="pass1" required>
+  </div>
+
+  <button type="button" value="Submit" onclick="sam()">Submit</button>
+
+</form>
+
+<script>
+  {% include "templates/includes/register.js" %}
+</script>
+{% endblock %}

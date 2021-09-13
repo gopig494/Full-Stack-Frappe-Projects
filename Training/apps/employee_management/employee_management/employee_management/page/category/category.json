@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2021-08-30 18:37:42.924701",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-08-30 18:37:45.473959",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "category",
+ "owner": "Administrator",
+ "page_name": "Category",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Category"
+}

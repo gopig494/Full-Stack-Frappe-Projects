@@ -1,0 +1,51 @@
+{
+ "autoname": "PC.###",
+ "creation": "2021-09-07 10:38:31.867375",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "stock_qty",
+  "price",
+  "weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Attribute Html",
+   "options": "Product Variants"
+  },
+  {
+   "fieldname": "stock_qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stock Qty"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weight"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-07 10:43:37.002377",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Combination",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

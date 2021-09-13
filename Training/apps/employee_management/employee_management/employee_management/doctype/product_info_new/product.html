@@ -1,0 +1,43 @@
+
+
+<table class="table table-bordered" style="cursor:pointer; margin: 0px;">
+    <thead>
+        <th>Product Id</th>
+        <th>Product Attribute </th>
+        <th>Is Required</th>
+         <th>Control Type</th>
+        <th>Display Order</th>
+        <th>Size Chart</th>
+        <th>Options</th>
+        <th>          </th>       
+    </thead>
+    <tbody>       
+            {% if variant.length >0%}
+           
+            {% for rec in variant %}                    
+        <tr>
+        <td>{{rec.name}}</td>
+        <td>{{rec.product_attribute}}</td>
+        <td>{{rec.is_required}}</td>
+        <td>{{rec.control_type}}</td>
+        <td>{{rec.display_order}}</td>
+        <td>{{rec.size_chart}}</td>
+        <td><button type="" class="btn btn-xs btn-default" onclick="Editoptions()"> Edit Options </button></td>
+        <td><button type="Button" class="btn btn-xs  btn-success" onclick="edit_row(`{{rec.product_attribute}}`,`{{rec.is_required}}`,`{{rec.control_type}}`,`{{rec.display_order}}`,`{{rec.size_chart}}`,`{{rec.name}}`)">Edit</button>
+
+            <button class="btn btn-xs btn-danger" data-id='{{rec.name}}' onclick="Delete_rec($(this))" style="margin-right:10px;">Delete</button>
+        </td>
+
+        </tr>
+{% endfor%}
+{% else%}
+
+{% endif %}
+</tbody>
+</table>
+<!-- <script>
+    {% public "public/js/product_info_new_edit.js" %}
+</script> -->
+
+
+

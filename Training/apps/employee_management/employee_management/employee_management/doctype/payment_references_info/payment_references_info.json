@@ -1,0 +1,65 @@
+{
+ "creation": "2021-08-16 16:10:12.421097",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_2",
+  "type",
+  "ref_name",
+  "total_amount",
+  "outstanding_amt",
+  "allocated_amt"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "ref_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Name",
+   "options": "type"
+  },
+  {
+   "default": "0",
+   "fieldname": "outstanding_amt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Outstanding Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "allocated_amt",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Allocated Amount"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-08-17 12:12:47.375715",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Payment References Info",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

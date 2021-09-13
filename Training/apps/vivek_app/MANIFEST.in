@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include vivek_app *.css
+recursive-include vivek_app *.csv
+recursive-include vivek_app *.html
+recursive-include vivek_app *.ico
+recursive-include vivek_app *.js
+recursive-include vivek_app *.json
+recursive-include vivek_app *.md
+recursive-include vivek_app *.png
+recursive-include vivek_app *.py
+recursive-include vivek_app *.svg
+recursive-include vivek_app *.txt
+recursive-exclude vivek_app *.pyc

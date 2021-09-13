@@ -1,264 +1,728 @@
-[DEBUG] 2021-08-16 12:41:29,532 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2021-09-13 14:58:52,018 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 14:58:52,096 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 14:58:52,316 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
 Queued events for site management
-[ERROR] 2021-08-16 12:42:10,829 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
- "selected_children": "{}",
- "source_name": "ORD054-1"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 51, in new_entry
-    result= frappe.new_doc("Payments")
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 699, in new_doc
-    return get_new_doc(doctype, parent_doc, parentfield, as_dict=as_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/create_new.py", line 21, in get_new_doc
-    frappe.local.new_doc_templates[doctype] = make_new_doc(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/create_new.py", line 39, in make_new_doc
-    "docstatus": 0
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
-    controller = get_controller(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 13
-    d.outstanding = out
-    ^
-IndentationError: unexpected indent
-[ERROR] 2021-08-16 12:42:10,989 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:42:10.830483-127.0.0.1-641
-[DEBUG] 2021-08-16 12:42:29,799 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2021-09-13 14:59:52,382 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 14:59:52,425 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 14:59:52,534 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
 Queued events for site management
-[ERROR] 2021-08-16 12:42:33,032 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "action": "Save",
- "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"__islocal\":1,\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":49,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"__islocal\":1,\"namee\":\"ORD054-1\",\"outstanding\":0,\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"docstatus\":0,\"allocated\":0,\"total\":157,\"type\":\"Orderss\",\"parentfield\":\"ref\",\"parent\":\"New Payments 2\",\"name\":\"New Ref 2\"}],\"name\":\"New Payments 2\",\"__last_sync_on\":\"2021-08-16T07:12:28.503Z\",\"__unsaved\":1}"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
-    return self._save(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
-    self.insert()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
-    self.run_before_save_methods()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 901, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 12, in validate
-    out =flt(d.total)- flt(self.paid_amount)
-NameError: global name 'd' is not defined
-[ERROR] 2021-08-16 12:42:33,177 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:42:33.033168-127.0.0.1-c76
-[ERROR] 2021-08-16 12:43:05,154 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "action": "Save",
- "cmd": "frappe.desk.form.save.savedocs",
- "doc": "{\"__islocal\":1,\"doctype\":\"Payments\",\"payment_mode\":\"Cash\",\"idx\":0,\"payment_type\":\"Pay\",\"paid_amount\":49,\"owner\":\"Administrator\",\"docstatus\":0,\"customer_name\":\"Boopathy\",\"ref\":[{\"__islocal\":1,\"namee\":\"ORD054-1\",\"outstanding\":0,\"doctype\":\"Ref\",\"idx\":1,\"parenttype\":\"Payments\",\"docstatus\":0,\"allocated\":0,\"total\":157,\"type\":\"Orderss\",\"parentfield\":\"ref\",\"parent\":\"New Payments 2\",\"name\":\"New Ref 2\"}],\"name\":\"New Payments 2\",\"__last_sync_on\":\"2021-08-16T07:12:28.503Z\",\"__unsaved\":1}"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 21, in savedocs
-    doc.save()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
-    return self._save(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
-    self.insert()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
-    self.run_before_save_methods()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 901, in run_before_save_methods
-    self.run_method("validate")
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
-    out = Document.hook(fn)(self, *args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
-    return composed(self, method, *args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
-    add_to_return_value(self, fn(self, *args, **kwargs))
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
-    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/payments/payments.py", line 12, in validate
-    out =flt(self.total)- flt(self.paid_amount)
-AttributeError: 'Payments' object has no attribute 'total'
-[ERROR] 2021-08-16 12:43:05,298 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:43:05.155351-127.0.0.1-553
-[DEBUG] 2021-08-16 12:43:30,007 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2021-09-13 15:00:52,604 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:00:52,607 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:00:52,774 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
 Queued events for site management
-[DEBUG] 2021-08-16 12:44:30,295 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+[DEBUG] 2021-09-13 15:01:52,844 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:01:52,847 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:01:52,975 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
 Queued events for site management
-[ERROR] 2021-08-16 12:44:41,992 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+[DEBUG] 2021-09-13 15:02:53,044 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:02:53,046 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:02:53,182 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.doctype.order_menu_info.order_menu_info.py.make_payment",
- "selected_children": "{}",
- "source_name": "4f20c66aaf"
-}
+Queued events for site management
+[DEBUG] 2021-09-13 15:03:53,493 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:03:53,494 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:03:53,988 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:04:57,972 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:04:58,171 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:04:59,405 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:05:59,930 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:06:00,067 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:06:03,411 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:07:03,807 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:07:04,017 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:07:10,926 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:08:22,458 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:08:22,922 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:08:33,965 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:09:39,623 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:09:40,453 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:09:49,393 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:10:49,884 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:10:50,095 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:10:52,190 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:11:52,513 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:11:52,595 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:11:55,483 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:12:55,554 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:12:55,556 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:12:56,140 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:13:56,210 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:13:56,213 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:13:56,576 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:14:56,645 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:14:56,647 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:14:56,970 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:15:57,040 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:15:57,042 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:15:57,243 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:16:57,313 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:16:57,332 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:16:57,620 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:17:57,691 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:17:57,763 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:17:59,211 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:18:59,280 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:18:59,282 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:18:59,399 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:19:59,463 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:19:59,466 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:20:00,130 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:21:00,197 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:21:00,212 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:21:00,349 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:22:00,417 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:22:00,420 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:22:00,844 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:23:00,911 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:23:00,914 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:23:01,279 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:24:01,347 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:24:01,350 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:24:01,512 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:25:01,582 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:25:01,584 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:25:02,204 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:26:12,613 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:26:12,806 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:26:24,778 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:27:25,370 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:27:25,372 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:27:26,289 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:28:26,427 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:28:26,430 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:28:26,712 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:29:26,897 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:29:26,898 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:29:27,196 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:30:27,265 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:30:27,299 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:30:27,826 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:31:28,028 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:31:28,031 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:31:28,203 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:32:28,273 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:32:28,275 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:32:28,500 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:33:28,563 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:33:28,565 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:33:28,941 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:34:29,169 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:34:29,193 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:34:29,578 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:35:29,738 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:35:29,828 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:35:30,214 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:36:30,281 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:36:30,284 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:36:30,678 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:37:30,745 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:37:30,747 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:37:30,907 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:38:30,977 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:38:30,979 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:38:31,141 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:39:31,237 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:39:31,260 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:39:31,467 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:40:31,537 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:40:31,565 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:40:31,902 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-09-13 15:41:25,818 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
 Request Error
 Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
-    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 76, in application
+    response = frappe.website.render.render()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 80, in render
+    data = render_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 193, in render_page
+    return build(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 200, in build
+    return build_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 215, in build_page
+    context = get_context(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 75, in build_context
+    context.update(get_website_settings())
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 102, in get_website_settings
+    frappe.get_attr(update_website_context)(context)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
     return getattr(get_module(modulename), methodname)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-ImportError: No module named doctype.order_menu_info.order_menu_info.py
-[ERROR] 2021-08-16 12:44:42,170 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:44:41.992524-127.0.0.1-169
-[DEBUG] 2021-08-16 12:45:30,485 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+AttributeError: 'module' object has no attribute 'get_context'
+[ERROR] 2021-09-13 15:41:26,000 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-13 15:41:25.819226-127.0.0.1-952
+[DEBUG] 2021-09-13 15:41:31,969 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:41:31,971 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:41:32,533 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
 Queued events for site management
-[ERROR] 2021-08-16 12:45:45,659 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+[ERROR] 2021-09-13 15:41:33,484 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.doctype.order_menu_info.order_menu_info.make_payment",
- "selected_children": "{}",
- "source_name": "4f20c66aaf"
-}
 Request Error
 Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
-    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 76, in application
+    response = frappe.website.render.render()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 80, in render
+    data = render_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 193, in render_page
+    return build(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 200, in build
+    return build_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 215, in build_page
+    context = get_context(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 75, in build_context
+    context.update(get_website_settings())
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 102, in get_website_settings
+    frappe.get_attr(update_website_context)(context)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
     return getattr(get_module(modulename), methodname)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-ImportError: No module named doctype.order_menu_info.order_menu_info
-[ERROR] 2021-08-16 12:45:45,664 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:45:45.660232-127.0.0.1-626
-[DEBUG] 2021-08-16 12:46:30,737 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+AttributeError: 'module' object has no attribute 'get_context'
+[ERROR] 2021-09-13 15:41:33,632 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-13 15:41:33.484767-127.0.0.1-727
+[ERROR] 2021-09-13 15:41:37,531 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:47:30,916 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:48:31,112 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 12:48:48,123 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.doctype.order_menu_info.order_menu_info.make_payment",
- "selected_children": "{}",
- "source_name": "4f20c66aaf"
-}
 Request Error
 Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
-    method = frappe.get_attr(method)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 76, in application
+    response = frappe.website.render.render()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 80, in render
+    data = render_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 193, in render_page
+    return build(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 200, in build
+    return build_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 215, in build_page
+    context = get_context(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 75, in build_context
+    context.update(get_website_settings())
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 102, in get_website_settings
+    frappe.get_attr(update_website_context)(context)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
     return getattr(get_module(modulename), methodname)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-ImportError: No module named doctype.order_menu_info.order_menu_info
-[ERROR] 2021-08-16 12:48:48,127 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:48:48.123860-127.0.0.1-4bf
-[ERROR] 2021-08-16 12:49:17,047 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+AttributeError: 'module' object has no attribute 'get_context'
+[ERROR] 2021-09-13 15:41:37,535 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-13 15:41:37.531773-127.0.0.1-bec
+[DEBUG] 2021-09-13 15:42:32,631 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:42:32,634 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:42:32,936 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:43:33,003 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:43:33,042 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:43:33,345 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-09-13 15:44:00,662 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 76, in application
+    response = frappe.website.render.render()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 80, in render
+    data = render_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 193, in render_page
+    return build(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 200, in build
+    return build_page(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/render.py", line 215, in build_page
+    context = get_context(path)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 28, in get_context
+    context = build_context(context)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/context.py", line 75, in build_context
+    context.update(get_website_settings())
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/website/doctype/website_settings/website_settings.py", line 102, in get_website_settings
+    frappe.get_attr(update_website_context)(context)
+  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/before_after_install/install.py", line 16, in get_context
+    return s
+NameError: global name 's' is not defined
+[ERROR] 2021-09-13 15:44:00,814 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-13 15:44:00.663190-127.0.0.1-f88
+[DEBUG] 2021-09-13 15:44:33,411 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:44:33,412 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:44:34,751 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:45:34,818 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:45:34,820 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:45:35,187 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:46:38,670 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:46:39,421 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:46:43,304 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:47:43,399 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:47:43,411 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:47:43,649 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:48:43,720 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:48:43,799 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:48:44,086 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:49:44,172 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:49:44,174 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:49:44,400 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:50:44,472 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:50:44,494 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:50:44,645 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:51:44,715 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:51:44,717 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:51:44,952 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:52:45,047 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:52:45,049 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:52:45,280 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:53:45,352 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:53:45,353 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:53:46,079 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:54:47,643 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:54:47,801 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:54:50,107 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:55:51,981 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:55:52,255 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:55:53,601 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:56:53,669 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:56:53,812 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:56:55,727 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:57:55,798 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:57:55,800 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:57:56,801 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:58:56,918 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:58:56,937 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:58:57,997 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 15:59:58,087 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 15:59:58,090 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 15:59:58,273 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:00:58,342 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:00:58,344 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:00:58,550 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:01:58,622 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:01:58,625 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:01:58,940 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:02:59,011 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:02:59,013 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:03:01,522 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:04:01,592 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:04:01,594 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:04:01,800 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:05:01,869 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:05:01,871 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:05:02,610 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:06:02,679 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:06:02,681 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:06:03,217 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:07:03,286 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:07:03,288 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:07:03,651 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:08:03,715 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:08:03,717 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:08:03,840 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:09:03,939 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:09:03,942 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:09:04,127 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-09-13 16:09:22,918 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
 Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
- "selected_children": "{}",
- "source_name": "ORD054-1"
+ "cmd": "employee_management.employee_management.page.order.order.get_list"
 }
 Request Error
 Traceback (most recent call last):
@@ -268,584 +732,562 @@ Traceback (most recent call last):
     return frappe.handler.handle()
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
     data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
-    method = frappe.get_attr(method)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
-    return getattr(get_module(modulename), methodname)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 59
-    result.append("ref",{"type":"Orderss","namee":re.name,"total":re.total},"paid_amount":re.paid_amount)
-                                                                                         ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 12:49:17,194 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:49:17.048024-127.0.0.1-44e
-[ERROR] 2021-08-16 12:49:20,030 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 52, in execute_cmd
+    raise e
+AttributeError: 'module' object has no attribute 'get_list'
+[ERROR] 2021-09-13 16:09:23,362 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-13 16:09:22.919431-127.0.0.1-062
+[DEBUG] 2021-09-13 16:10:04,197 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:10:04,200 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:10:04,369 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
- "selected_children": "{}",
- "source_name": "ORD054-1"
-}
-Request Error
+Queued events for site management
+[DEBUG] 2021-09-13 16:11:04,435 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:11:04,436 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:11:04,998 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:12:05,066 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:12:05,068 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:12:05,223 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:13:05,288 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:13:05,291 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:13:05,391 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:14:05,461 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:14:05,464 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:14:05,547 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:15:05,617 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:15:05,619 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:15:05,755 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:16:05,824 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:16:05,826 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:16:05,953 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:17:06,022 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:17:06,024 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:17:06,121 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:18:06,189 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:18:06,192 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:18:06,317 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:19:06,386 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:19:06,388 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:19:06,493 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:20:06,743 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:20:06,745 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:20:07,088 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:21:07,157 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:21:07,160 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:21:07,252 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:22:07,321 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:22:07,324 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:22:07,428 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:23:07,498 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:23:07,500 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:23:07,626 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:24:07,696 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:24:07,698 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:24:07,823 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:25:07,890 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:25:07,892 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:25:08,012 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:26:08,081 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:26:08,083 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:26:08,290 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[ERROR] 2021-09-13 16:26:10,621 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: school
+Exception in Enqueue Events for Site school
 Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
-    method = frappe.get_attr(method)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
-    return getattr(get_module(modulename), methodname)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 59
-    result.append("ref",{"type":"Orderss","namee":re.name,"total":re.total},"paid_amount":re.paid_amount)
-                                                                                         ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 12:49:20,037 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:49:20.032551-127.0.0.1-cea
-[DEBUG] 2021-08-16 12:49:31,289 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:50:31,519 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 12:50:52,645 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.wallet_transaction.wallet_transaction.make_payment",
- "selected_children": "{}",
- "source_name": "WE-53"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-TypeError: make_payment() takes no arguments (1 given)
-[ERROR] 2021-08-16 12:50:52,798 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:50:52.645887-127.0.0.1-227
-[DEBUG] 2021-08-16 12:51:31,733 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 12:51:54,150 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.wallet_transaction.wallet_transaction.make_payment",
- "selected_children": "{}",
- "source_name": "WE-53"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-TypeError: make_payment() takes no arguments (1 given)
-[ERROR] 2021-08-16 12:51:54,307 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:51:54.150709-127.0.0.1-2a9
-[DEBUG] 2021-08-16 12:52:31,940 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:53:32,178 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:54:32,416 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 12:54:55,530 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.orderss.orderss.new_entry",
- "selected_children": "{}",
- "source_name": "ORD054-1"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 17, in make_mapped_doc
-    method = frappe.get_attr(method)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
-    return getattr(get_module(modulename), methodname)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 55
-    paid_amount:re.outstanding
-               ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 12:54:55,671 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:54:55.531387-127.0.0.1-bcd
-[DEBUG] 2021-08-16 12:55:32,596 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:56:32,801 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:57:33,047 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 12:58:25,850 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.wallet_transaction.wallet_transaction.make_payment",
- "selected_children": "{}",
- "source_name": "WE-54"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-TypeError: make_payment() takes no arguments (1 given)
-[ERROR] 2021-08-16 12:58:26,008 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 12:58:25.850953-127.0.0.1-160
-[DEBUG] 2021-08-16 12:58:33,251 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 12:59:33,438 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:00:33,652 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:01:33,830 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:02:34,010 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:03:34,315 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:04:34,503 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:05:34,680 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:06:34,846 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:07:35,024 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:08:35,231 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:09:35,420 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:10:35,608 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:11:35,787 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:12:35,997 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:13:36,171 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:14:36,395 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:15:36,718 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:16:36,924 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:17:37,110 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:18:37,297 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:19:37,483 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:20:37,688 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:21:37,868 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:22:38,043 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:23:38,232 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:24:38,419 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 13:24:57,603 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "cached_timestamp": "2021-08-13 17:56:54.049509",
- "cmd": "frappe.desk.form.load.getdoctype",
- "doctype": "Order Menu Info",
- "with_parent": "1"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
-    docs = get_meta_bundle(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
-    bundle = [frappe.desk.form.meta.get_meta(doctype)]
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
-    meta = FormMeta(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
-    self.load_assets()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
-    self.load_templates()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
-    module = load_doctype_module(self.name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 12
-    if
-      ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 13:24:57,768 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 13:24:57.603927-127.0.0.1-5a0
-[DEBUG] 2021-08-16 13:25:38,602 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:26:38,774 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:27:38,945 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:28:39,132 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 13:29:38,339 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "cached_timestamp": "2021-08-13 17:56:54.049509",
- "cmd": "frappe.desk.form.load.getdoctype",
- "doctype": "Order Menu Info",
- "with_parent": "1"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
-    docs = get_meta_bundle(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
-    bundle = [frappe.desk.form.meta.get_meta(doctype)]
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
-    meta = FormMeta(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
-    self.load_assets()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
-    self.load_templates()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
-    module = load_doctype_module(self.name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 71
-    @frappe.whitelist(allow_guest=True)
-                                      ^
-IndentationError: expected an indented block
-[ERROR] 2021-08-16 13:29:38,614 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 13:29:38.339766-127.0.0.1-642
-[DEBUG] 2021-08-16 13:29:39,324 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:30:39,503 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 13:31:37,679 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.order_menu_info.order_menu_info.make_payment",
- "selected_children": "{}",
- "source_name": "2274724017"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 85, in make_payment
-    result.append("ref",{"type":"Order Menu Info","name1":re.name})
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 185, in _init_child
-    value["doctype"] = self.get_table_field_doctype(key)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 299, in get_table_field_doctype
-    return self.meta.get_field(fieldname).options
-AttributeError: 'NoneType' object has no attribute 'options'
-[ERROR] 2021-08-16 13:31:37,838 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 13:31:37.680500-127.0.0.1-c8a
-[DEBUG] 2021-08-16 13:31:39,756 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 13:32:29,278 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.order_menu_info.order_menu_info.make_payment",
- "selected_children": "{}",
- "source_name": "2274724017"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 85, in make_payment
-    result.append("ref",{"type":"Order Menu Info","name1":re.name})
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 185, in _init_child
-    value["doctype"] = self.get_table_field_doctype(key)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 299, in get_table_field_doctype
-    return self.meta.get_field(fieldname).options
-AttributeError: 'NoneType' object has no attribute 'options'
-[ERROR] 2021-08-16 13:32:29,284 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 13:32:29.278771-127.0.0.1-f0f
-[DEBUG] 2021-08-16 13:32:39,956 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:33:40,132 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[ERROR] 2021-08-16 13:34:30,704 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "args": "",
- "cmd": "frappe.model.mapper.make_mapped_doc",
- "method": "employee_management.employee_management.doctype.order_menu_info.order_menu_info.make_payment",
- "selected_children": "{}",
- "source_name": "78fe879788"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/mapper.py", line 30, in make_mapped_doc
-    return method(source_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/order_menu_info/order_menu_info.py", line 85, in make_payment
-    result.append("ref",{"type":"Order Menu Info","name1":re.name})
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 150, in append
-    value = self._init_child(value, key)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 185, in _init_child
-    value["doctype"] = self.get_table_field_doctype(key)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 299, in get_table_field_doctype
-    return self.meta.get_field(fieldname).options
-AttributeError: 'NoneType' object has no attribute 'options'
-[ERROR] 2021-08-16 13:34:30,864 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 13:34:30.704792-127.0.0.1-ced
-[DEBUG] 2021-08-16 13:34:40,305 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:35:40,541 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:36:40,731 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:37:40,913 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:38:41,123 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:39:41,300 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:40:41,516 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:41:41,733 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:42:41,911 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:43:42,159 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:44:42,391 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:45:42,565 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:46:42,792 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:47:42,963 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:48:43,164 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:49:43,344 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:50:43,740 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:51:43,919 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:52:44,117 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:53:44,294 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:54:44,481 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:55:44,938 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:56:45,229 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:57:45,429 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:58:45,606 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 13:59:45,847 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 14:00:46,104 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 14:01:46,281 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 14:02:46,538 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
-Site: management
-Queued events for site management
-[DEBUG] 2021-08-16 14:03:46,764 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py", line 81, in enqueue_events_for_site
+    if is_scheduler_inactive():
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py", line 228, in is_scheduler_inactive
+    if is_scheduler_disabled():
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py", line 237, in is_scheduler_disabled
+    return not frappe.utils.cint(frappe.db.get_single_value("System Settings", "enable_scheduler"))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/database/database.py", line 556, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 790, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/meta.py", line 37, in get_meta
+    meta = Meta(doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/meta.py", line 83, in __init__
+    super(Meta, self).__init__("DocType", doctype)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 106, in __init__
+    self.load_from_db()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/meta.py", line 88, in load_from_db
+    super(Meta, self).load_from_db()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 149, in load_from_db
+    frappe.throw(_("{0} {1} not found").format(_(self.doctype), self.name), frappe.DoesNotExistError)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 380, in throw
+    msgprint(msg, raise_exception=exc, title=title, indicator='red', is_minimizable=is_minimizable)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 359, in msgprint
+    _raise_exception()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 319, in _raise_exception
+    raise raise_exception(msg)
+DoesNotExistError: DocType System Settings not found
+
+[DEBUG] 2021-09-13 16:27:10,694 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:27:10,697 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:27:11,154 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:28:12,725 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:28:12,727 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:28:12,854 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:29:13,256 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:29:13,258 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:29:13,465 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:30:13,712 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:30:13,714 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:30:13,835 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:31:14,123 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:31:14,125 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:31:14,229 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:32:14,365 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:32:14,367 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:32:14,498 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:33:14,603 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:33:14,606 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:33:14,796 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:34:14,884 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:34:14,887 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:34:15,075 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:35:15,164 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:35:15,167 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:35:15,277 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:36:15,365 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:36:15,367 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:36:15,491 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:37:15,596 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:37:15,598 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:37:15,766 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:38:15,898 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:38:15,900 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:38:16,051 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:40:30,758 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:40:33,446 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:40:35,559 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:45:34,180 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:45:34,192 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:45:34,405 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:46:35,587 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:46:35,681 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:46:35,845 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:47:36,305 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:47:36,307 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:47:36,616 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:48:36,768 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:48:36,781 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:48:37,029 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:49:37,146 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:49:37,172 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:49:37,289 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:50:37,409 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:50:37,411 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:50:37,691 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:51:37,841 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:51:37,843 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:51:37,946 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:52:38,039 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:52:38,041 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:52:38,261 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:53:38,430 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:53:38,432 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:53:38,562 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:54:38,800 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:54:38,819 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:54:39,559 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:55:39,721 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:55:39,724 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:55:39,848 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:56:39,954 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:56:39,956 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:56:40,294 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:57:40,459 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:57:40,461 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:57:40,584 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:58:40,676 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:58:40,679 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:58:40,780 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 16:59:40,869 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 16:59:40,886 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 16:59:41,039 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:00:41,156 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:00:41,184 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:00:41,323 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:01:41,496 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:01:41,498 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:01:41,686 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:02:41,869 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:02:41,918 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:02:42,039 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:03:42,163 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:03:42,166 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:03:42,287 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:04:42,374 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:04:42,376 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:04:42,685 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:05:42,820 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:05:42,835 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:05:43,101 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:06:43,234 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:06:43,237 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:06:43,398 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:07:43,488 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:07:43,490 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:07:43,622 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:08:43,737 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:08:43,791 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:08:44,076 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:09:44,247 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:09:44,249 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:09:44,375 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:10:44,496 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:10:44,498 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:10:44,782 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:11:44,874 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:11:44,890 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:11:45,059 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: management
+Queued events for site management
+[DEBUG] 2021-09-13 17:12:45,161 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learn
+Access denied for site Learn
+[DEBUG] 2021-09-13 17:12:45,164 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
+Site: Learning
+Access denied for site Learning
+[DEBUG] 2021-09-13 17:12:45,324 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/scheduler.py:
 Site: management
 Queued events for site management

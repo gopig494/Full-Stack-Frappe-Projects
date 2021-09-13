@@ -1,0 +1,65 @@
+{
+ "creation": "2021-09-07 10:43:18.083461",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_attribute",
+  "is_required",
+  "control_type",
+  "display_order",
+  "size_chart",
+  "attribute_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_attribute",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Attribute"
+  },
+  {
+   "default": "Yes",
+   "fieldname": "is_required",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Is Required",
+   "options": "Yes\nNo"
+  },
+  {
+   "fieldname": "control_type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Control Type"
+  },
+  {
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Display Order"
+  },
+  {
+   "fieldname": "size_chart",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Size Chart"
+  },
+  {
+   "fieldname": "attribute_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-09 12:59:48.118533",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Variant Assesment",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

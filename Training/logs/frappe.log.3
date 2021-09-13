@@ -1,10 +1,9 @@
-[ERROR] 2021-08-16 11:16:05,377 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+[ERROR] 2021-09-11 18:06:17,576 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
 Form Dict: {
- "cached_timestamp": "",
- "cmd": "frappe.desk.form.load.getdoctype",
- "doctype": "Orderss",
- "with_parent": "1"
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"first_name\":\"gg\",\"last_name\":\"\",\"modified_by\":\"Administrator\",\"name\":\"CUSTOMER08\",\"parent\":null,\"phone\":\"\",\"creation\":\"2021-09-11 18:01:53.008609\",\"modified\":\"2021-09-11 18:01:53.008609\",\"amended_from\":null,\"note\":null,\"idx\":0,\"parenttype\":null,\"doctype\":\"Customerb\",\"owner\":\"Administrator\",\"docstatus\":0,\"password\":\"\",\"email\":\"\",\"parentfield\":null,\"__last_sync_on\":\"2021-09-11T12:31:56.363Z\"}"
 }
 Request Error
 Traceback (most recent call last):
@@ -18,37 +17,83 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
     return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
-    docs = get_meta_bundle(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
-    bundle = [frappe.desk.form.meta.get_meta(doctype)]
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
-    meta = FormMeta(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
-    self.load_assets()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
-    self.load_templates()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
-    module = load_doctype_module(self.name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1075, in composer
+    hooks.append(frappe.get_attr(handler))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
     return importlib.import_module(modulename)
   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
     __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 13
-    on_save(self):
-                 ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 11:16:05,826 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 11:16:05.446862-127.0.0.1-e1a
-[ERROR] 2021-08-16 11:16:25,338 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+ImportError: No module named crudevents.crud
+[ERROR] 2021-09-11 18:06:17,783 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-11 18:06:17.644468-127.0.0.1-54a
+[ERROR] 2021-09-11 18:06:21,286 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
 Form Dict: {
- "cached_timestamp": "",
- "cmd": "frappe.desk.form.load.getdoctype",
- "doctype": "Orderss",
- "with_parent": "1"
+ "cmd": "frappe.handler.upload_file",
+ "docname": "2cc6c07e7f",
+ "doctype": "Test"
+}
+Request Error
+Traceback (most recent call last):
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 64, in application
+    response = frappe.handler.handle()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
+    data = execute_cmd(cmd)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
+    return frappe.call(method, **frappe.form_dict)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
+    return fn(*args, **newargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 207, in upload_file
+    ret.save(ignore_permissions=ignore_permissions)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 296, in _save
+    self.insert()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 230, in insert
+    self.run_before_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 901, in run_before_save_methods
+    self.run_method("validate")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1061, in runner
+    add_to_return_value(self, fn(self, *args, **kwargs))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 796, in <lambda>
+    fn = lambda self, *args, **kwargs: getattr(self, method)(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/file/file.py", line 102, in validate
+    self.validate_url()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/file/file.py", line 109, in validate_url
+    self.validate_file()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/file/file.py", line 214, in validate_file
+    full_path = self.get_full_path()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/core/doctype/file/file.py", line 401, in get_full_path
+    if "/" not in file_path:
+TypeError: argument of type 'NoneType' is not iterable
+[ERROR] 2021-09-11 18:06:21,436 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-11 18:06:21.287356-127.0.0.1-f5f
+[ERROR] 2021-09-11 18:06:55,274 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+Site: management
+Form Dict: {
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"first_name\":\"gg\",\"last_name\":\"\",\"modified_by\":\"Administrator\",\"name\":\"CUSTOMER08\",\"parent\":null,\"phone\":\"\",\"creation\":\"2021-09-11 18:01:53.008609\",\"modified\":\"2021-09-11 18:01:53.008609\",\"amended_from\":null,\"note\":null,\"idx\":0,\"parenttype\":null,\"doctype\":\"Customerb\",\"owner\":\"Administrator\",\"docstatus\":0,\"password\":\"\",\"email\":\"\",\"parentfield\":null,\"__last_sync_on\":\"2021-09-11T12:31:56.363Z\"}"
 }
 Request Error
 Traceback (most recent call last):
@@ -62,36 +107,37 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
     return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
-    docs = get_meta_bundle(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
-    bundle = [frappe.desk.form.meta.get_meta(doctype)]
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
-    meta = FormMeta(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
-    self.load_assets()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
-    self.load_templates()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
-    module = load_doctype_module(self.name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1075, in composer
+    hooks.append(frappe.get_attr(handler))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
     return importlib.import_module(modulename)
   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
     __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 13
-    on_save(self):
-                 ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 11:16:25,651 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 11:16:25.338911-127.0.0.1-6a8
-[ERROR] 2021-08-16 11:16:44,697 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+ImportError: No module named crudevents.crud
+[ERROR] 2021-09-11 18:06:55,416 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-11 18:06:55.274991-127.0.0.1-8af
+[ERROR] 2021-09-11 18:07:26,764 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
 Form Dict: {
- "cmd": "frappe.desk.form.load.getdoc",
- "doctype": "Orderss",
- "name": "ORD044"
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"first_name\":\"gg\",\"last_name\":\"\",\"modified_by\":\"Administrator\",\"name\":\"CUSTOMER08\",\"parent\":null,\"phone\":\"\",\"creation\":\"2021-09-11 18:01:53.008609\",\"modified\":\"2021-09-11 18:01:53.008609\",\"amended_from\":null,\"note\":null,\"idx\":0,\"parenttype\":null,\"doctype\":\"Customerb\",\"owner\":\"Administrator\",\"docstatus\":0,\"password\":\"\",\"email\":\"\",\"parentfield\":null,\"__last_sync_on\":\"2021-09-11T12:31:56.363Z\"}"
 }
 Request Error
 Traceback (most recent call last):
@@ -105,33 +151,37 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
     return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 34, in getdoc
-    doc = frappe.get_doc(doctype, name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
-    controller = get_controller(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1075, in composer
+    hooks.append(frappe.get_attr(handler))
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1066, in get_attr
+    return getattr(get_module(modulename), methodname)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
     return importlib.import_module(modulename)
   File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
     __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 13
-    on_save(self):
-                 ^
-SyntaxError: invalid syntax
-[ERROR] 2021-08-16 11:16:44,704 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 11:16:44.697675-127.0.0.1-be5
-[ERROR] 2021-08-16 11:17:12,386 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+ImportError: No module named crudevents.crud
+[ERROR] 2021-09-11 18:07:26,908 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-11 18:07:26.765613-127.0.0.1-825
+[ERROR] 2021-09-11 18:09:07,205 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
 Form Dict: {
- "cached_timestamp": "",
- "cmd": "frappe.desk.form.load.getdoctype",
- "doctype": "Orderss",
- "with_parent": "1"
+ "action": "Submit",
+ "cmd": "frappe.desk.form.save.savedocs",
+ "doc": "{\"first_name\":\"gg\",\"last_name\":\"\",\"modified_by\":\"Administrator\",\"name\":\"CUSTOMER08\",\"parent\":null,\"phone\":\"\",\"creation\":\"2021-09-11 18:01:53.008609\",\"modified\":\"2021-09-11 18:01:53.008609\",\"amended_from\":null,\"note\":null,\"idx\":0,\"parenttype\":null,\"doctype\":\"Customerb\",\"owner\":\"Administrator\",\"docstatus\":0,\"password\":\"\",\"email\":\"\",\"parentfield\":null,\"__last_sync_on\":\"2021-09-11T12:31:56.363Z\"}"
 }
 Request Error
 Traceback (most recent call last):
@@ -145,108 +195,24 @@ Traceback (most recent call last):
     return frappe.call(method, **frappe.form_dict)
   File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
     return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
-    docs = get_meta_bundle(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
-    bundle = [frappe.desk.form.meta.get_meta(doctype)]
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
-    meta = FormMeta(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
-    self.load_assets()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
-    self.load_templates()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
-    module = load_doctype_module(self.name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 14
-    total = self.product_price
-        ^
-IndentationError: expected an indented block
-[ERROR] 2021-08-16 11:17:12,661 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 11:17:12.387572-127.0.0.1-b84
-[ERROR] 2021-08-16 11:26:24,799 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "cmd": "frappe.desk.form.save.cancel",
- "doctype": "Orderss",
- "name": "ORD048"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 34, in cancel
-    doc = frappe.get_doc(doctype, name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 765, in get_doc
-    doc = frappe.model.document.get_doc(*args, **kwargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 69, in get_doc
-    controller = get_controller(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/base_document.py", line 48, in get_controller
-    module = load_doctype_module(doctype, module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 15
-    frappe.db.set_value("total"=self.product_price)
-SyntaxError: keyword can't be an expression
-[ERROR] 2021-08-16 11:26:24,941 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 11:26:24.800527-127.0.0.1-3e8
-[ERROR] 2021-08-16 11:26:45,122 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
-Site: management
-Form Dict: {
- "cached_timestamp": "",
- "cmd": "frappe.desk.form.load.getdoctype",
- "doctype": "Orderss",
- "with_parent": "1"
-}
-Request Error
-Traceback (most recent call last):
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py", line 67, in application
-    response = frappe.api.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/api.py", line 59, in handle
-    return frappe.handler.handle()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 24, in handle
-    data = execute_cmd(cmd)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/handler.py", line 64, in execute_cmd
-    return frappe.call(method, **frappe.form_dict)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 1075, in call
-    return fn(*args, **newargs)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 70, in getdoctype
-    docs = get_meta_bundle(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/load.py", line 80, in get_meta_bundle
-    bundle = [frappe.desk.form.meta.get_meta(doctype)]
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 29, in get_meta
-    meta = FormMeta(doctype)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 39, in __init__
-    self.load_assets()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 53, in load_assets
-    self.load_templates()
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/meta.py", line 179, in load_templates
-    module = load_doctype_module(self.name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/modules/utils.py", line 204, in load_doctype_module
-    doctype_python_modules[key] = frappe.get_module(module_name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/__init__.py", line 840, in get_module
-    return importlib.import_module(modulename)
-  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
-    __import__(name)
-  File "/home/server-admin/Projects/Gopi/Training/apps/employee_management/employee_management/employee_management/doctype/orderss/orderss.py", line 15
-    frappe.db.set_value("total"=self.product_price)
-SyntaxError: keyword can't be an expression
-[ERROR] 2021-08-16 11:26:45,187 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
-New Exception collected with id: 2021-08-16 11:26:45.137758-127.0.0.1-bd4
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/desk/form/save.py", line 19, in savedocs
+    doc.submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 872, in submit
+    self._submit()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 861, in _submit
+    self.save()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 273, in save
+    return self._save(*args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 326, in _save
+    self.run_post_save_methods()
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 935, in run_post_save_methods
+    self.run_method("on_submit")
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 802, in run_method
+    out = Document.hook(fn)(self, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1078, in composer
+    return composed(self, method, *args, **kwargs)
+  File "/home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/model/document.py", line 1063, in runner
+    add_to_return_value(self, f(self, method, *args, **kwargs))
+TypeError: on_sub() takes exactly 1 argument (2 given)
+[ERROR] 2021-09-11 18:09:07,353 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/utils/error.py:
+New Exception collected with id: 2021-09-11 18:09:07.206487-127.0.0.1-007

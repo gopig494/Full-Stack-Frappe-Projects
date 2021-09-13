@@ -1,0 +1,97 @@
+{
+ "autoname": "SEI-.###",
+ "creation": "2021-09-06 15:53:12.682888",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stock_entry_details",
+  "date",
+  "total_amount",
+  "purpose",
+  "data_4",
+  "note",
+  "section_break_7",
+  "product_info_se",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "stock_entry_details",
+   "fieldtype": "Section Break",
+   "label": "Stock Entry Details"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "Material Receipt\nMaterial Transfer"
+  },
+  {
+   "fieldname": "data_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Stock Entry Info",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_info_se",
+   "fieldtype": "Table",
+   "label": "Product ",
+   "options": "Product Info SE"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-09-06 20:32:23.303297",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Stock Entry Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

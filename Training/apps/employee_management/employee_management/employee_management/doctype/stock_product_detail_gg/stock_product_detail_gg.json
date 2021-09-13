@@ -1,0 +1,66 @@
+{
+ "autoname": "AP.###",
+ "creation": "2021-09-06 15:41:09.118227",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_id",
+  "product_name",
+  "product_price",
+  "product_quantity",
+  "total_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Id"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "product_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Price"
+  },
+  {
+   "fieldname": "product_quantity",
+   "fieldtype": "Int",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Product Quantity "
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Total Amount "
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-09 12:36:05.999477",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Stock Product Detail GG",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

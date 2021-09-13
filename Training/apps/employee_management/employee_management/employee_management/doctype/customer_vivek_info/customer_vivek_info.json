@@ -1,0 +1,115 @@
+{
+ "autoname": "CUSINFO.####",
+ "creation": "2021-09-02 20:32:22.544341",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "customer_registration",
+  "column_break_3",
+  "section_break_4",
+  "first_name",
+  "last_name",
+  "gender",
+  "email",
+  "phone",
+  "password",
+  "column_break_10",
+  "sequrity_qus",
+  "answer"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_registration",
+   "fieldtype": "Heading",
+   "label": "CUSTOMER INFO"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Phone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Password",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sequrity_qus",
+   "fieldtype": "Data",
+   "label": "Sequrity Qus"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Data",
+   "label": "Answer"
+  }
+ ],
+ "modified": "2021-09-03 11:01:10.780940",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Customer Vivek Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

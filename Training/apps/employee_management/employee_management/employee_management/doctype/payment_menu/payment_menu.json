@@ -26,6 +26,7 @@
   "reference",
   "allocate_payment_amout",
   "payment_reference",
+  "pyt_menu",
   "amended_from"
  ],
  "fields": [
@@ -144,16 +145,23 @@
    "fieldtype": "Select",
    "label": "Payment Type",
    "options": "Pay\nRecive"
+  },
+  {
+   "fieldname": "pyt_menu",
+   "fieldtype": "Link",
+   "label": "Payment Menu ",
+   "options": "Order Menu Info"
   }
  ],
  "is_submittable": 1,
- "modified": "2021-08-16 13:33:17.515089",
+ "modified": "2021-08-21 17:23:22.860552",
  "modified_by": "Administrator",
  "module": "Employee Management",
  "name": "Payment Menu",
  "owner": "Administrator",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -163,6 +171,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

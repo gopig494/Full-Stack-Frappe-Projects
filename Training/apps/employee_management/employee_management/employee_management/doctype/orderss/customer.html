@@ -3,8 +3,10 @@
     <thead style="background-color: #e5e9ef;">
         <th>Payment ID#</th>
         <th>Payment Date</th>
+         <th>Total</th>
         <th>Paid Amount</th>
         <th>Outstanding Amount</th>
+       
     </thead>
     <tbody>
        
@@ -14,10 +16,12 @@
             
           
         <tr>
-        <td><a href="#Form/Payment Entry/{{n.name}}">{{n.name}}</a></td>
+        <td><a href="#Form/Payment EntrMenu/{{n.name}}">{{n.name}}</a></td>
         <td>{{moment(n.posting_date).format("MM/DD/YYYY")}}</td>
+         <td>{{n.total}}</td>
         <td>{{n.paid_amount}}</td>
-    <td>{{n.outstanding_amount}}</td>
+    <td>{{n.outstanding}}</td>
+   
    
 </tr>
 

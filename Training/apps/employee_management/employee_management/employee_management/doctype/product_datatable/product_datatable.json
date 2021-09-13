@@ -1,0 +1,137 @@
+{
+ "autoname": "PRODET1.####",
+ "creation": "2021-08-30 14:54:13.753330",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_3",
+  "product_details",
+  "column_break_4",
+  "section_break_2",
+  "id",
+  "product",
+  "sku",
+  "price",
+  "old_price",
+  "column_break_6",
+  "stock",
+  "active",
+  "featured_product",
+  "categories",
+  "image",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Data",
+   "label": "Id",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "sku",
+   "fieldtype": "Data",
+   "label": "SKU"
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price"
+  },
+  {
+   "fieldname": "old_price",
+   "fieldtype": "Currency",
+   "label": "Old Price"
+  },
+  {
+   "fieldname": "stock",
+   "fieldtype": "Data",
+   "label": "Stock"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "featured_product",
+   "fieldtype": "Data",
+   "label": "Featured Product"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_details",
+   "fieldtype": "Heading",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "categories",
+   "fieldtype": "Link",
+   "label": "Categories",
+   "options": "Category Vivek"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "Image"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Product Datatable",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-08-31 13:19:58.458317",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Datatable",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "show_preview_popup": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

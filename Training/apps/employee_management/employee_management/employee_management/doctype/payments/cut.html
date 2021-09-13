@@ -1,0 +1,32 @@
+<a class="btn btn-primary btn-sm primary-action{% if button_enable==0%} hidden {% endif%}"  id="{{payments}}" onclick="goto_expense($(this))" ><i class="visible-xs octicon octicon-check"></i><span class="hidden-xs">Make Expense</span></a>
+<table class="table table-bordered">
+    <thead style="background-color: #e5e9ef;">
+       
+        <th>Paid Amount</th>
+       
+       
+    </thead>
+    <tbody>
+       
+            {% if payments.length >0%}
+           
+            {% for n in payments %}
+            
+          
+        <tr>
+        
+         
+        <td>{{n.name}}</td>
+    
+   
+   
+</tr>
+
+{% endfor%}
+{% else%}
+<tr>
+        <td colspan="7">No records found!</td>
+        </tr>
+{% endif %}
+</tbody>
+</table>

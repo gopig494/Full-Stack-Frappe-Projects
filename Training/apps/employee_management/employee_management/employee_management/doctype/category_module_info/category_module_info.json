@@ -1,0 +1,57 @@
+{
+ "autoname": "CATE-.##",
+ "creation": "2021-08-26 10:49:37.487131",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "categories_section",
+  "category_name",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "categories_section",
+   "fieldtype": "Section Break",
+   "label": "CATEGORIES"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "modified": "2021-08-26 15:01:25.072489",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Category Module Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "category_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

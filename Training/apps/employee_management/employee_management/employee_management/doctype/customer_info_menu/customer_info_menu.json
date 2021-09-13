@@ -1,0 +1,121 @@
+{
+ "autoname": "CUSRG1.####",
+ "creation": "2021-09-03 13:19:53.461998",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "customer_registration",
+  "column_break_3",
+  "section_break_4",
+  "first_name",
+  "last_name",
+  "gender",
+  "email",
+  "phone",
+  "password",
+  "column_break_10",
+  "sequrity_qus",
+  "answer",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "customer_registration",
+   "fieldtype": "Heading",
+   "label": "CUSTOMER DETAILS"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Data",
+   "label": "Gender"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Phone"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "in_list_view": 1,
+   "label": "Password"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sequrity_qus",
+   "fieldtype": "Data",
+   "label": "Sequrity Qus"
+  },
+  {
+   "fieldname": "answer",
+   "fieldtype": "Data",
+   "label": "Answer"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Info Menu",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2021-09-03 17:09:35.488936",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Customer Info Menu",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

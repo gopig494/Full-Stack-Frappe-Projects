@@ -1,0 +1,29 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<table class="table table-dark table-striped table-bordered" style="max-width: 1000px;">
+
+    
+
+    
+    <tbody>
+ <tr>
+            <td style="width: 20%"><a href="{{doc.route}}">
+               {{name}}
+           </a>
+            </td>
+             <td style="width: 20%">
+                {{ product_name}}
+            </td style="width: 20%">
+           
+            
+             <td style="width: 20%">
+                {{ payment_status }}
+
+</tr>
+       
+    </tbody>
+</table>
+{% endblock %}
+
+<!-- this is a sample default web page template -->

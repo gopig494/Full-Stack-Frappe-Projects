@@ -1,0 +1,37 @@
+<table class="table table-striped table-bordered" style="max-width: 600px;">
+    <thead>
+        <tr>
+            <th style="width: 30%;">
+               Name
+            </th>
+            <th style="width: 50%;">
+              Date
+            </th>
+            <th style="width: 50%;">
+             Customer Name
+            </th>
+            <th style="width: 50%;">
+              Price
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {% for f in payments %}
+        <tr>
+            <td>
+                {{ f.name}}
+            </td>
+             <td>
+                {{ f.post_date}}
+            </td>
+            <td>
+                {{ f.customer_name}}
+            </td>
+           <td>
+                {{ f.price}}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

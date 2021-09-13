@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2021-08-18 14:43:05.980094",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-08-18 14:43:11.851770",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "order-disolay",
+ "owner": "Administrator",
+ "page_name": "Order Disolay",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Order Details "
+}

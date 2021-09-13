@@ -1,0 +1,22 @@
+{
+ "content": null,
+ "creation": "2021-08-18 16:16:43.038520",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-08-18 16:16:45.512595",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "order-details-info",
+ "owner": "Administrator",
+ "page_name": "Order Details Info",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

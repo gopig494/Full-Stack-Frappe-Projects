@@ -1,0 +1,60 @@
+{
+ "autoname": "PROIN-.##",
+ "creation": "2021-09-07 11:03:20.242102",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_variant_section",
+  "add_new_attribute",
+  "product_variant",
+  "new_record"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_variant_section",
+   "fieldtype": "Section Break",
+   "label": "<h2>Product Variant</h2>"
+  },
+  {
+   "fieldname": "add_new_attribute",
+   "fieldtype": "Button",
+   "label": "<h4>Add New Attribute</h4>",
+   "options": "<button class=\"btn btn-info \"></button>"
+  },
+  {
+   "fieldname": "product_variant",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Product Variant",
+   "options": "Product Variants info"
+  },
+  {
+   "fieldname": "new_record",
+   "fieldtype": "HTML",
+   "label": "New Record"
+  }
+ ],
+ "modified": "2021-09-13 16:29:15.945483",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Info New",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

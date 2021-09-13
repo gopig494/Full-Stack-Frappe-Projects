@@ -1,0 +1,82 @@
+{
+ "autoname": "CATEGORY1.###",
+ "creation": "2021-08-26 10:51:11.373439",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "category_head",
+  "column_break_3",
+  "section_break_4",
+  "category",
+  "available",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Category Vivek",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category_head",
+   "fieldtype": "Heading",
+   "label": "Category"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "label": "Category"
+  },
+  {
+   "default": "0",
+   "fieldname": "available",
+   "fieldtype": "Check",
+   "label": "Availsble"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-08-26 15:19:29.730294",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Category Vivek",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "category",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

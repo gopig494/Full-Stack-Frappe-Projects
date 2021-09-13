@@ -1,0 +1,39 @@
+<a class="btn btn-primary btn-sm primary-action
+{% if button_enable==0%} hidden {% endif%}" 
+id="{{orders_menu_info}}" onclick="goto_expense($(this))">
+<i class="visible-xs octicon octicon-check"></i>
+<span class="hidden-xs">Payment Results</span></a>
+<table class="table table-bordered">
+    <!-- <marquee style="background-color: lightgreen;color: black;"><b>Payment Details</b></marquee> -->
+    <thead style="background-color: #e5e9eb;">
+        <th>Payment ID</th>
+        <th>Payment Date</th>
+         <th>Total Amount</th>
+        <th>Paid Amount</th>
+        <th>Outstanding Amount</th>
+       
+    </thead>
+    <tbody>
+       
+            {% if payments.length >0%}
+           
+            {% for i in payments %}
+            
+          
+        <tr>
+        <td><a href="#Form/Payment Module Info/{{i.name}}">{{i.name}}</a></td>
+        <td>{{moment(i.posting_date).format("MM/DD/YYYY")}}</td>
+        <td>{{i.total_amount}}</td>
+        <td>{{i.paid_amount}}</td>
+        <td><a href="#Form/Orders Menu Info/{{i.outstanding_amt}}">{{i.outstanding_amt}}</td>
+        </tr>
+
+{% endfor%}
+{% else%}
+<tr>
+        <td colspan="7">No records found!</td>
+        </tr>
+{% endif %}
+</tbody>
+</table>
+

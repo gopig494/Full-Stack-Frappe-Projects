@@ -1,3 +1,27 @@
 2021-08-04 12:46:15,690 INFO creating new app employee_management
 2021-08-04 12:46:56,034 INFO installing employee_management
 2021-08-04 12:46:56,035 INFO ./env/bin/pip install -q  -e ./apps/employee_management 
+2021-09-07 10:05:33,975 INFO creating new app office_management
+2021-09-07 10:06:03,698 INFO installing office_management
+2021-09-07 10:06:03,698 INFO ./env/bin/pip install -q  -e ./apps/office_management 
+2021-09-07 10:57:04,400 INFO creating new app productsample
+2021-09-07 10:57:42,125 INFO installing productsample
+2021-09-07 10:57:42,125 INFO ./env/bin/pip install -q  -e ./apps/productsample 
+2021-09-09 13:08:42,517 INFO creating new app learning
+2021-09-09 13:09:18,178 INFO installing learning
+2021-09-09 13:09:18,178 INFO ./env/bin/pip install -q  -e ./apps/learning 
+2021-09-09 17:54:11,906 INFO updating bench
+2021-09-09 17:54:11,923 INFO git pull
+2021-09-09 17:54:27,912 INFO updating bench
+2021-09-09 17:54:27,912 INFO git pull
+2021-09-10 12:08:44,374 INFO creating new app vivek_app
+2021-09-10 12:14:45,142 INFO installing vivek_app
+2021-09-10 12:14:45,932 INFO ./env/bin/pip install -q  -e ./apps/vivek_app 
+2021-09-10 16:33:04,933 INFO updating bench
+2021-09-10 16:33:04,951 INFO git pull
+2021-09-13 12:37:23,217 INFO creating new app time
+2021-09-13 12:37:48,789 INFO installing time
+2021-09-13 12:37:48,789 INFO ./env/bin/pip install -q  -e ./apps/time 
+2021-09-13 12:43:15,644 INFO creating new app sample1
+2021-09-13 12:43:45,750 INFO installing sample1
+2021-09-13 12:43:45,750 INFO ./env/bin/pip install -q  -e ./apps/sample1 

@@ -1,4 +1,6 @@
 {
+ "allow_guest_to_view": 1,
+ "autoname": "order-menu-1.###",
  "creation": "2021-08-12 19:09:38.748173",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -15,8 +17,16 @@
   "paid_amount",
   "post_date",
   "price",
+  "outstanding_amount",
   "section_break_13",
-  "amended_from"
+  "show_payment",
+  "section_break_15",
+  "payment_detail",
+  "section_break_17",
+  "child_payment",
+  "amended_from",
+  "route",
+  "data_22"
  ],
  "fields": [
   {
@@ -34,12 +44,15 @@
   },
   {
    "fieldname": "section_break_4",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "permlevel": 1
   },
   {
    "fieldname": "customer_name",
    "fieldtype": "Data",
-   "label": "Customer Name"
+   "in_list_view": 1,
+   "label": "Customer Name",
+   "permlevel": 1
   },
   {
    "fieldname": "order_item_id",
@@ -49,7 +62,8 @@
   {
    "fieldname": "order_item",
    "fieldtype": "Data",
-   "label": "Order Item"
+   "label": "Order Item",
+   "permlevel": 1
   },
   {
    "fieldname": "column_break_9",
@@ -58,7 +72,13 @@
   {
    "fieldname": "paid_amount",
    "fieldtype": "Currency",
-   "label": "Paid Amount"
+   "label": "Paid Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "post_date",
+   "fieldtype": "Date",
+   "label": "Date"
   },
   {
    "fieldname": "price",
@@ -66,8 +86,40 @@
    "label": "Price"
   },
   {
+   "fieldname": "outstanding_amount",
+   "fieldtype": "Currency",
+   "label": "Outstanding Amount",
+   "read_only": 1
+  },
+  {
    "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "show_payment",
+   "fieldtype": "Button",
+   "label": "Show Payment"
+  },
+  {
+   "fieldname": "payment_detail",
+   "fieldtype": "HTML",
+   "label": "Payment Detail"
+  },
+  {
+   "fieldname": "section_break_15",
    "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "child_payment",
+   "fieldtype": "Table",
+   "label": "Child Payment",
+   "options": "Payment Display"
   },
   {
    "fieldname": "amended_from",
@@ -79,13 +131,18 @@
    "read_only": 1
   },
   {
-   "fieldname": "post_date",
-   "fieldtype": "Date",
-   "label": "Date"
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Data"
   }
  ],
+ "has_web_view": 1,
  "is_submittable": 1,
- "modified": "2021-08-13 17:56:54.049509",
+ "modified": "2021-08-25 13:18:16.081512",
  "modified_by": "Administrator",
  "module": "Employee Management",
  "name": "Order Menu Info",
@@ -107,7 +164,9 @@
   }
  ],
  "quick_entry": 1,
+ "route": "ordermenu",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "customer_name",
  "track_changes": 1
 }

@@ -1,0 +1,58 @@
+{
+ "creation": "2021-09-06 15:59:06.686375",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_id",
+  "product_name",
+  "price",
+  "qty",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Product ID",
+   "options": "Product Stock Vivek"
+  },
+  {
+   "fetch_from": "product_id.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name"
+  },
+  {
+   "fetch_from": "product_id.valuation_rate",
+   "fieldname": "price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Price"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Total"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-06 19:12:32.342839",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Stock Reference",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,99 @@
+{
+ "autoname": "PROI-.###",
+ "creation": "2021-09-06 15:45:05.201100",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_details_section",
+  "product_name",
+  "price",
+  "column_break_4",
+  "description",
+  "is_stock_item",
+  "section_break_7",
+  "opening_stock",
+  "valuation_rate",
+  "small_text_10"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "Product Details"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_stock_item",
+   "fieldtype": "Check",
+   "label": "Is Stock Item"
+  },
+  {
+   "depends_on": "is_stock_item",
+   "fieldname": "valuation_rate",
+   "fieldtype": "Currency",
+   "label": "Valuation Rate"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "is_stock_item",
+   "fieldname": "opening_stock",
+   "fieldtype": "Data",
+   "label": "Opening Stock"
+  },
+  {
+   "fieldname": "small_text_10",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Small Text"
+  }
+ ],
+ "modified": "2021-09-09 13:25:56.541888",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

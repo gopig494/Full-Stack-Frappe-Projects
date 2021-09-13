@@ -1,0 +1,81 @@
+{
+ "accept_payment": 0,
+ "allow_comments": 0,
+ "allow_delete": 0,
+ "allow_edit": 0,
+ "allow_incomplete": 1,
+ "allow_multiple": 0,
+ "allow_print": 0,
+ "amount": 0.0,
+ "amount_based_on_field": 0,
+ "button_label": "Save",
+ "client_script": "alert(\"hii);",
+ "creation": "2021-09-09 16:05:19.294492",
+ "doc_type": "Customerb",
+ "docstatus": 0,
+ "doctype": "Web Form",
+ "idx": 0,
+ "is_standard": 1,
+ "login_required": 0,
+ "max_attachment_size": 0,
+ "modified": "2021-09-09 16:16:17.468770",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "register",
+ "owner": "Administrator",
+ "payment_button_label": "Buy Now",
+ "published": 1,
+ "route": "register",
+ "route_to_success_link": 0,
+ "show_attachments": 0,
+ "show_in_grid": 0,
+ "show_sidebar": 1,
+ "sidebar_items": [
+  {
+   "enabled": 0,
+   "reference_doctype": "Pro",
+   "route": "sample",
+   "title": "sample"
+  }
+ ],
+ "success_message": "alert(\"registered successfully\");",
+ "success_url": "/register",
+ "title": "Register",
+ "web_form_fields": [
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "First Name",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "",
+   "fieldtype": "Column Break",
+   "hidden": 0,
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  },
+  {
+   "allow_read_on_all_link_options": 0,
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "hidden": 0,
+   "label": "Last Name",
+   "max_length": 0,
+   "max_value": 0,
+   "read_only": 0,
+   "reqd": 0,
+   "show_in_filter": 0
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "autoname": "STOCKLED.##",
+ "creation": "2021-09-06 15:37:26.194923",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "section_break_2",
+  "product_id",
+  "column_break_4",
+  "product_name",
+  "column_break_6",
+  "actual_qty",
+  "section_break_8",
+  "valuation_rate",
+  "column_break_10",
+  "aqat"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_id",
+   "fieldtype": "Data",
+   "label": "Product Id"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "actual_qty",
+   "fieldtype": "Data",
+   "label": "Actual qty"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "valuation_rate",
+   "fieldtype": "Data",
+   "label": "Valuation Rate"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aqat",
+   "fieldtype": "Data",
+   "label": "Actual qty after transaction"
+  }
+ ],
+ "modified": "2021-09-06 17:16:08.602090",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Stock Ledger",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

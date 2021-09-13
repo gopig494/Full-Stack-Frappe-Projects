@@ -1,0 +1,616 @@
+{% extends "templates/web.html" %}
+{% block content %}
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body> -->
+
+<!-- <div class="container">
+  <p>The <abbr title="World Health Organization">WHO</abbr> was found in 1998.<code>Span</code>,<code>Section</code>,<kbd>Ctrl+c</kbd><pre>the who is found in 1998.</pre></p>
+</div>
+<div>
+  <p>Use colorfull contextual Calss</p>
+  <p class="text-muted">this is muted.</p>
+   <p class="text-success">this is success.</p>
+    <p class="text-primary">this is primary.</p>
+     <p class="text-info">this is information.</p>
+      <p class="text-warning">this is warning.</p>
+       <p class="text-danger">this is danger.</p>
+</div> -->
+<div class="container">
+  <p>This is for bg color</p>
+    <p class="bg-success">This is for bg color</p>
+        <p class="bg-warning">This is for bg color</p>
+        <p class="bg-info">This is for bg color</p>
+        <p class="bg-danger">This is for bg color</p>
+        <p class="bg-primary">This is for bg color</p>
+        <!-- <p class="">This is for bg color</p> -->
+
+<hr>
+  <p>
+    Sample Table Striped
+  </p>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <p>
+    Sample Table Bordered
+  </p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+<hr>
+
+<p>
+    Sample Table hover
+  </p>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+<hr>
+
+<p>
+    Sample Contextual Classes
+  </p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="success">
+        <td>Success</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="info">
+        <td>Info</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr class="warning">
+        <td>Warning</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr class="Danger">
+        <td>Danger</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+      <tr class="active">
+        <td>Active</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <hr>
+  <center>
+<p>Image Rounded </p>
+<img src="C:\Users\Tridots-0008\Downloads\download (3).jpg" class="img-rounded" alt="Cinque Terre" width="250" height="500">
+</center>
+
+ <hr>
+  <center>
+<p>Image Rounded </p>
+<img src="C:\Users\Tridots-0008\Downloads\download (3).jpg" class="img-circle" alt="Cinque Terre" width="250" height="500">
+</center>
+
+ <hr>
+  <center>
+<p>Image Rounded </p>
+<img src="C:\Users\Tridots-0008\Downloads\download (3).jpg" class="img-thumbnail" alt="Cinque Terre" width="250" height="500">
+</center>
+
+<hr>
+
+<center>
+ <div class="row">
+  <div class="col-md-6">
+    <div class="thumbnail">
+      <a href="C:\Users\Tridots-0008\Downloads\download (3).jpg">
+        <img src="C:\Users\Tridots-0008\Downloads\download (3).jpg" 
+        alt="Lights" style="width:30%">
+        <div class="caption">
+          <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</center>
+
+  <hr>
+
+<div>
+  <h2>Alerts</h2>
+  <div class="alert alert-success alert-dismisable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Success!</strong> This alert box could indicate a successful or positive action.
+  </div>
+  <div class="alert alert-info alert-dismisable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Info!</strong> This alert box could indicate a neutral informative change or action.
+  </div>
+  <div class="alert alert-warning alert-dismisable fade in">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+  </div>
+  <div class="alert alert-danger alert-dismisable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>Danger!</strong> This alert box could indicate a dangerous or potentially negative action.
+  </div>
+</div>
+<hr>
+<h2>Button Styles</h2>
+<button type="Button" class="btn">Basic</button>
+<button type="Button" class="btn btn-success btn-lg">success</button>
+<button type="Button" class="btn btn-info btn-xs">Info</button>
+<button type="Button" class="btn btn-warning btn-sm">Warning</button>
+<button type="Button" class="btn btn-danger btn-lg">Danger</button>
+<button type="Button" class="btn btn-link">Link</button>
+<hr>
+<button type="Button" class="btn btn-success btn-block active">success</button>
+<button type="Button" class="btn btn-default btn-block disabled">success</button>
+<hr>
+<button type="Button" class="btn btn-success btn-lg btn-block">success</button>
+<button type="Button" class="btn btn-default btn-lg btn-block">success</button>
+<hr>
+<button type="Button" class="btn btn-success btn-sm btn-block">success</button>
+<button type="Button" class="btn btn-default btn-sm btn-block">success</button>
+
+<hr>
+<div class="btn-group">
+<button type="Button" class="btn">Basic</button>
+<button type="Button" class="btn btn-success">success</button>
+<button type="Button" class="btn btn-info">Info</button>
+<button type="Button" class="btn btn-warning">Warning</button>
+<button type="Button" class="btn btn-danger">Danger</button>
+<button type="Button" class="btn btn-primary btn-link">Link</button>
+</div>
+<hr>
+<div class="btn-group-vertical">
+<button type="Button" class="btn">Basic</button>
+<button type="Button" class="btn btn-success">success</button>
+<button type="Button" class="btn btn-info">Info</button>
+<button type="Button" class="btn btn-warning">Warning</button>
+<button type="Button" class="btn btn-danger">Danger</button>
+<button type="Button" class="btn btn-primary btn-link">Link</button>
+</div>
+<hr>
+
+<div class="btn-group">
+<button type="Button" class="btn btn-primary">Sony</button>
+<button type="Button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  <span class="caret"></span>
+</button>
+<ul class="dropdown-menu" role="menu">
+  <li><a href="#">Tablet</a></li>
+  <li><a href="#">Smart Phone</a></li>
+</ul>
+
+</div>
+<hr>
+
+<div>
+  <p>Envelope Icon: <span class="glyphicon glyphicon-envelope"></span></p>
+  <p>Envelope Icon: <a href="#"><span class="glyphicon glyphicon-envelope"></span></a></p>
+  <p>Search icon on a button:  <button type="Button" class="btn btn-default"><span 
+  class="glyphicon glyphicon-search"></span> Search</button></p>
+  <p>Search icon on a button:  <button type="Button" class="btn btn-info"><span 
+  class="glyphicon glyphicon-search"></span> Search</button></p>
+  <p>Search icon on a Print:  <button type="Button" class="btn btn-default"><span 
+  class="glyphicon glyphicon-print"></span> Print</button></p>
+  <p>Search icon on a Print:  <button type="Button" class="btn btn-success btn-lg"><span 
+  class="glyphicon glyphicon-print"></span> Print</button></p>
+
+<hr>
+<p>Badges</p>
+  <button type="Button" class="btn btn-success">Success <span class="badge">20</span></button>
+</div>
+
+<hr>
+
+<p>Contextual classes can be used to color the label.</p>  
+  <span class="label label-default">Default Label</span>
+  <span class="label label-primary">Primary Label</span>
+  <span class="label label-success">Success Label</span>
+  <span class="label label-info">Info Label</span>
+  <span class="label label-warning">Warning Label</span>
+  <span class="label label-danger">Danger Label</span>
+
+  <hr>
+  <p>Progress Bar :</p>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="40%" area-valuemin="0%"
+  area-valuemax="100%" style="width: 50%;">50%
+  </div>
+</div>
+  <hr>
+<div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40%" area-valuemin="0%"
+  area-valuemax="100%" style="width: 60%;">60%
+  </div>
+</div>
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50%" area-valuemin="0%"
+  area-valuemax="100%" style="width: 70%;">70%
+  </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="40%" area-valuemin="0%"
+  area-valuemax="100%" style="width: 80%;">80%
+  </div>
+  </div>
+  <div class="progress">
+    <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="40%" area-valuemin="0%"
+  area-valuemax="100%" style="width: 85%;">85%
+  </div>
+  </div>
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40%" area-valuemin="0%"
+  area-valuemax="100%" style="width: 90%;">90%
+  </div>
+  </div>
+
+  <hr>
+  <p>Stacked Progress Bar </p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 60%;">Success
+  </div>
+  <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" style="width: 20%;">Info
+  </div>
+  <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" style="width: 17%;">Warning
+  </div>
+  </div>
+  
+
+
+  <hr>
+
+<div>
+  <p>Pagination</p>
+  <ul class="pagination pagination-lg">
+    <li><a href="#">1</a></li>
+    <li class="active"><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li class="disabled"><a href="#">5</a></li>
+  </ul>
+</div>
+<hr>
+
+<div>
+  <p>Breadcrumbs</p>
+  <ul class="breadcrumb">
+    <li><a href="#">Home</a></li>
+    <li class=""><a href="#">Private</a></li>
+    <li><a href="#">Pictures</a></li>
+    <li><a href="#">Vacation</a></li>
+    <li class="active">Next</li>
+  </ul>
+  <ul class="pager">
+    <li class="previous"><a href="#">Previous</a></li>
+    <li class="next"><a href="#">Next</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<div>
+  <p>List Group</p>
+  <div class="list-group">
+    <a href="#" class="list-group-item active">
+      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+   <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+    <a href="#" class="list-group-item">
+      <h4 class="list-group-item-heading">First List Group Item Heading</h4>
+      <p class="list-group-item-text">List Group Item Text</p>
+    </a>
+  </div>
+ <!--  <ul class="list-group">
+    <li class="list-group-item-success">First Name</li>
+    <li class="list-group-item-info ">Second Name</li>
+    <li class="list-group-item-warning">Third Name</li>
+  </ul> -->
+</div>
+<hr>
+
+<div class="dropup">
+    <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropup Example
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li class="dropdown-header">Header 1</li>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+      <li class="divider"></li>
+      <li class="dropdown-header">Header 2</li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </div>
+
+<hr>
+</div>
+
+<hr>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Website Name</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Page 1-1</a></li>
+        <li><a href="#">Page 1-2</a></li>
+        <li><a href="#">Page 1-3</a></li>
+      </ul>
+    </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 2
+      <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#">Page 2-1</a></li>
+        <li><a href="#">Page 2-2</a></li>
+        <li><a href="#">Page 2-3</a></li>
+        <li><a href="#">Page 2-4</a></li>
+        <li><a href="#">Page 2-5</a></li>
+      </ul>
+    </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sing Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-login"></span>login</a></li>
+      <button class="btn btn-info navbar-btn">Button</button>
+    </ul>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <form class="navbar-form navbar-left" action="/action_page.php">
+  <div class="input-group">
+    <input type="text" class="form-control" placeholder="Search">
+    <div class="input-group-btn">
+      <button class="btn btn-primary" type="submit">
+        <i class="glyphicon glyphicon-home"></i>
+      </button>
+    </div>
+  </div>
+</form>
+  </div>
+</nav>
+<div class="container">
+  <h2>Dropdown Menu using Navbar</h2>
+  <p>This example adds a dropdown menu for the "Page 1" button in the navigation bar.</p>  
+</div>
+
+<hr>
+<div class="container">
+  <h2>Bootstrap Inline Form</h2>
+  <form class="form-inline" action="">
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" name="">
+  </div>
+  <div class="form-group">
+    <label for="pas">Password</label>
+    <input type="password" class="form-control" id="email" placeholder="Enter Password" name="">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" name="">Remember Me</label>
+  </div>
+  <button type="Button" class="btn btn-success">Submit</button>
+</form>
+</div>
+<hr>
+<div class="container">
+   <h2>Bootstrap Horizontal Form</h2>
+  <form class="form-horizontal" action="">
+  <div class="form-group">
+    <label for="email">Email Address</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter Email Address" name="">
+  </div>
+  <div class="form-group">
+    <label for="pas">Password</label>
+    <input type="password" class="form-control" id="email" placeholder="Enter Password" name="">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" name="">Remember Me</label>
+  </div>
+  <button type="Button" class="btn btn-success">Submit</button>
+</form>
+<hr>
+<h2>Textarea</h2>
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="1" id="comment"></textarea>
+</div>
+<hr>
+<h2>Check Boxes</h2>
+<div class="checkbox">
+  <label class="checkbox-inline"><input type="checkbox" name="">Option 1</label>
+  <label class="checkbox-inline"><input type="checkbox" name="">Option 2</label>
+  <label class="checkbox-inline"><input type="checkbox" name="">Option 3</label>
+</div>
+
+<hr>
+<h2>Radio Buttons</h2>
+<div class="Radio">
+  <label class="radio-inline"><input type="radio" name="">Option 1</label>
+  <label class="radio-inline"><input type="radio" name="">Option 2</label>
+  <label class="radio-inline"><input type="radio" name="">Option 3</label>
+</div>
+<hr>
+<h2>Bootstrap Input Groups</h2>
+<form>
+  <div class="input-group">
+    <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+
+  </div>
+  <div class="input-group">
+    <input type="text" id="pwd" class="form-control" name="pwd" placeholder="Password">
+    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+  </div>
+  <br>
+   <div class="input-group">
+    <span class="input-group-addon">Text</span>
+    <input type="text" id="msg" class="form-control" name="msg" placeholder="Additional Text">
+  </div>
+</form>
+
+<hr>
+<h2>Bootstrap Form Control States</h2>
+<div class="form-group has-success has-feedback">
+  <label class="col-sm-2 control-label" for="inputSuccess">Input with Success And Glyphicon</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputSuccess" name="">
+    <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+  </div>
+</div>
+<div class="form-group has-success has-feedback">
+  <label class="col-sm-2 control-label" for="inputSuccess">Input with Success And Glyphicon</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control" id="inputSuccess" name="">
+    <span class="glyphicon glyphicon-sign form-control-feedback"></span>
+  </div>
+</div>
+<hr>
+<h2>coloumn sizing</h2>
+<div class="col-xs-5">
+        <label for="ex1">col-xs-5</label>
+        <input class="form-control" id="ex1" type="text">
+        <span class="help-block">Some help for the label</span>
+      </div>
+<hr>
+<h2>Modal Example</h2>
+
+
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+
+</div>
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,83 @@
+{
+ "creation": "2021-08-25 11:26:24.371474",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "personel_detail",
+  "section_break_4",
+  "name1",
+  "mobile_number",
+  "addresss",
+  "section_break_6"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Mobile Number",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "addresss",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Addresss",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "personel_detail",
+   "fieldtype": "Data",
+   "label": "Personel Detail",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2021-08-25 14:41:17.393921",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Vendor",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

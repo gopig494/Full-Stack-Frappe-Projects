@@ -1,10 +1,12 @@
 {
- "autoname": "ORD.###",
+ "beta": 1,
  "creation": "2021-08-12 11:10:54.680860",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "payments_detail",
+  "prompt",
   "customer_name",
   "product_name",
   "product_price",
@@ -12,7 +14,10 @@
   "paid_amount",
   "amended_from",
   "total",
-  "outstanding"
+  "outstanding",
+  "sam",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -43,26 +48,62 @@
    "fieldname": "payment_status",
    "fieldtype": "Select",
    "label": "Payment Status",
-   "options": "Paid\nUnpaid\nPartially paid"
+   "options": "Paid\nUnpaid\nPartially paid",
+   "permlevel": 2
   },
   {
    "fieldname": "paid_amount",
    "fieldtype": "Currency",
-   "label": "Paid Amount"
+   "label": "Paid Amount",
+   "permlevel": 2
   },
   {
    "fieldname": "total",
    "fieldtype": "Currency",
-   "label": "Total"
+   "label": "Total",
+   "permlevel": 2
   },
   {
    "fieldname": "outstanding",
    "fieldtype": "Data",
-   "label": "Outstanding"
+   "label": "Outstanding",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "prompt",
+   "fieldtype": "Button",
+   "label": "Prompt"
+  },
+  {
+   "fieldname": "payments_detail",
+   "fieldtype": "HTML",
+   "label": "Payments detail"
+  },
+  {
+   "fieldname": "sam",
+   "fieldtype": "Table",
+   "label": "Sam",
+   "options": "Child",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route",
+   "permlevel": 2
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published",
+   "permlevel": 2
   }
  ],
+ "has_web_view": 1,
+ "is_published_field": "published",
  "is_submittable": 1,
- "modified": "2021-08-16 10:41:48.965936",
+ "modified": "2021-08-25 14:54:54.252832",
  "modified_by": "Administrator",
  "module": "Employee Management",
  "name": "Orderss",
@@ -79,10 +120,25 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sam",
+   "set_user_permissions": 1,
+   "share": 1,
+   "write": 1
   }
  ],
  "quick_entry": 1,
+ "route": "sam",
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "customer_name",
  "track_changes": 1
 }

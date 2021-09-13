@@ -1,0 +1,66 @@
+{
+ "autoname": "PCV.###",
+ "creation": "2021-09-07 11:05:16.783649",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_attribute",
+  "is_required",
+  "display_order",
+  "attribute_name",
+  "control_type",
+  "size_chart"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_attribute",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Attribute"
+  },
+  {
+   "fieldname": "is_required",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Is Required",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "display_order",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Display Order"
+  },
+  {
+   "fieldname": "attribute_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Attribute Name"
+  },
+  {
+   "fieldname": "control_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Control Type",
+   "options": "\nRedio Button List\nDrop Down List\nCheck Box List"
+  },
+  {
+   "fieldname": "size_chart",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Size Chart"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-08 15:47:29.702011",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Variant Gopi",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

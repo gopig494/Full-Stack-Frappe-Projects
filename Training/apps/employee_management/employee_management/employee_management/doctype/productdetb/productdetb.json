@@ -1,0 +1,53 @@
+{
+ "creation": "2021-08-26 12:51:56.452393",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "product_name",
+  "product_price",
+  "product_total"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": " Name",
+   "options": "Productb"
+  },
+  {
+   "fetch_from": "name1.product_price",
+   "fieldname": "product_price",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Price"
+  },
+  {
+   "fetch_from": "name1.product_price",
+   "fieldname": "product_total",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Total"
+  },
+  {
+   "fetch_from": "name1.product_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product name"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-08-26 15:22:59.688947",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Productdetb",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

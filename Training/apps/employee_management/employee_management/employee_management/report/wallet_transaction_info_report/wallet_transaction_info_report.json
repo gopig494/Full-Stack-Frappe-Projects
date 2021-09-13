@@ -1,0 +1,25 @@
+{
+ "add_total_row": 0,
+ "creation": "2021-09-01 16:15:20.421044",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Reports",
+ "modified": "2021-09-01 16:15:20.421044",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Wallet Transaction Info Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Wallet Transaction Info",
+ "report_name": "Wallet Transaction Info Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ]
+}

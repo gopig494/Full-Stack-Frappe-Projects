@@ -1,0 +1,80 @@
+{
+ "autoname": "PRO-.####",
+ "creation": "2021-08-26 10:41:32.993241",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_details_section",
+  "product_name",
+  "product_image",
+  "product_price",
+  "category",
+  "product_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_price",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Product Price "
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Product Name",
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "product_details_section",
+   "fieldtype": "Section Break",
+   "label": "PRODUCT DETAILS"
+  },
+  {
+   "fieldname": "product_description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "product_image",
+   "fieldtype": "Attach Image",
+   "label": "Product Image"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Category Module Info"
+  }
+ ],
+ "image_field": "product_image",
+ "modified": "2021-08-26 15:34:22.847796",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Module Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "product_name,product_description",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

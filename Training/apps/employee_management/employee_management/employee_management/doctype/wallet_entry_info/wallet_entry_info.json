@@ -1,0 +1,60 @@
+{
+ "autoname": "WEI-.###",
+ "creation": "2021-09-01 11:55:52.853212",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "wallet_entry_section",
+  "customer_name",
+  "current_wallet_amount",
+  "last_updated_datetime"
+ ],
+ "fields": [
+  {
+   "fieldname": "wallet_entry_section",
+   "fieldtype": "Section Break",
+   "label": "Wallet Entry"
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer ",
+   "options": "Customer Info",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_wallet_amount",
+   "fieldtype": "Currency",
+   "label": "Current Wallet Amount"
+  },
+  {
+   "fieldname": "last_updated_datetime",
+   "fieldtype": "Date",
+   "label": "Last Updated Datetime"
+  }
+ ],
+ "modified": "2021-09-01 13:14:29.432632",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Wallet Entry Info",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

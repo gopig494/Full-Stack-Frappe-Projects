@@ -1,0 +1,98 @@
+{
+ "autoname": "STE1.###",
+ "creation": "2021-09-06 15:52:54.029955",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "column_break_1",
+  "stock_entry_details",
+  "column_break_3",
+  "section_break_4",
+  "stoct_entry_date",
+  "purpose",
+  "column_break_7",
+  "note",
+  "total_amount",
+  "section_break_10",
+  "product_info"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "stock_entry_details",
+   "fieldtype": "Heading",
+   "label": "STOCK ENTRY DETAILS"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "stoct_entry_date",
+   "fieldtype": "Date",
+   "label": "Stoct Entry Date"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Data",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Select",
+   "label": "Purpose",
+   "options": "Material Receipt\nMaterial Transfer"
+  },
+  {
+   "fieldname": "product_info",
+   "fieldtype": "Table",
+   "label": "Product Info",
+   "options": "Stock Reference"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2021-09-06 19:15:00.896386",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Stock Entry Vivek",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

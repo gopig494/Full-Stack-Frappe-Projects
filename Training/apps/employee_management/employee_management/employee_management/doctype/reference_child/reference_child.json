@@ -1,0 +1,41 @@
+{
+ "creation": "2021-08-18 10:33:34.422469",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "data_section",
+  "payment_detail",
+  "data"
+ ],
+ "fields": [
+  {
+   "fieldname": "payment_detail",
+   "fieldtype": "HTML",
+   "label": "Payment Detail"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Data"
+  },
+  {
+   "fieldname": "data_section",
+   "fieldtype": "Section Break",
+   "label": "Data"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-09-04 12:48:32.569044",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Reference Child",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
+}

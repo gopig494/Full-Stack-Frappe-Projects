@@ -1,0 +1,86 @@
+
+
+<a class="btn btn-primary btn-sm primary-action{% if button_enable==0%} hidden {% endif%}"  id="{{orderss}}" onclick="goto_expense($(this))" ><i class="visible-xs octicon octicon-check"></i><span class="hidden-xs">Make Expense</span></a>
+<table class="table table-bordered">
+	<thead style="background-color: #e5e9ef;">
+		<th>Pv name</th>
+		<th>Product Attribute</th>
+		<th>Is required</th>
+		 <th>Control type</th>
+		<th>Display order</th>
+	   
+	   
+	</thead>
+	<tbody>
+	   
+			{% if payments.length >0%}
+		   
+			{% for n in payments %}
+			
+		  
+		<tr>
+		<td   class="s">{{n.name}}</td>
+		<td>{{n.product_attribute}}</td>
+		 <td>{{n.is_required}}</td>
+		<td>{{n.control_type}}</td>
+	<td>{{n.display_order}}</td>
+	  <td><button type="button" data-id={{n.name}} onclick="sam(this);">Edit</button></td>
+	  <td><button type="button" data-id={{n.name}} onclick="del(this);">Delete</button></td>
+   
+   
+</tr>
+
+{% endfor%}
+{% else%}
+<tr>
+		<td colspan="7">No records found!</td>
+		</tr>
+{% endif %}
+</tbody>
+</table>
+<!-- <script>
+	{% includes "templates/includes/product.js" %}
+</script> -->
+<!-- <script>
+	function sam(){
+
+		var dataID = $('myDivID').data('data-id');
+		console.log(dataId);
+		let d = new frappe.ui.Dialog({
+			title: 'Enter details',
+			fields: [
+	        {
+	            label: 'First Name',
+	            fieldname: 'first_name',
+	            fieldtype: 'Data'
+	        },
+	        {
+	            label: 'Last Name',
+	            fieldname: 'last_name',
+	            fieldtype: 'Data'
+	        },
+	        {
+	            label: 'Age',
+	            fieldname: 'age',
+	            fieldtype: 'Int'
+	        }
+	    ],
+	    primary_action_label: 'Submit',
+    	primary_action(values) {
+        console.log(values);
+        d.hide();
+    }
+});
+
+d.show();
+
+
+
+	    
+    
+	}
+
+			   
+
+	
+</script> -->

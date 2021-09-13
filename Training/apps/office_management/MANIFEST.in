@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include office_management *.css
+recursive-include office_management *.csv
+recursive-include office_management *.html
+recursive-include office_management *.ico
+recursive-include office_management *.js
+recursive-include office_management *.json
+recursive-include office_management *.md
+recursive-include office_management *.png
+recursive-include office_management *.py
+recursive-include office_management *.svg
+recursive-include office_management *.txt
+recursive-exclude office_management *.pyc

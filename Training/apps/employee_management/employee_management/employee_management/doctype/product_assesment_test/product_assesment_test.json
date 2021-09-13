@@ -1,0 +1,72 @@
+{
+ "_assign": "[]",
+ "_comments": "[{\"comment\": \"<div><br></div>\", \"by\": \"admin@example.com\", \"name\": \"41b3122e66\"}, {\"comment\": \"<div>hello this is vivek from valiant</div>\", \"by\": \"admin@example.com\", \"name\": \"4ceb26e3d2\"}, {\"comment\": \"<div><br></div>\", \"by\": \"admin@example.com\", \"name\": \"8b3c295fc6\"}]",
+ "_liked_by": "[\"vi@gamil.com\"]",
+ "_user_tags": ",hjtj,fgdg,dfgfd",
+ "autoname": "PTD1.###",
+ "creation": "2021-09-07 10:28:19.863824",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "product_variants_section",
+  "add_new_details",
+  "product_variants",
+  "display_table",
+  "html"
+ ],
+ "fields": [
+  {
+   "fieldname": "product_variants_section",
+   "fieldtype": "Section Break",
+   "label": "PRODUCT VARIANTS"
+  },
+  {
+   "fieldname": "product_variants",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Product Variant",
+   "options": "Product Variant Assesment"
+  },
+  {
+   "fieldname": "display_table",
+   "fieldtype": "HTML",
+   "label": "Display Table"
+  },
+  {
+   "fieldname": "add_new_details",
+   "fieldtype": "Button",
+   "label": "Add New Details"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "html"
+  }
+ ],
+ "modified": "2021-09-09 16:21:40.619915",
+ "modified_by": "Administrator",
+ "module": "Employee Management",
+ "name": "Product Assesment Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

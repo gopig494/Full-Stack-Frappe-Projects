@@ -1,0 +1,50 @@
+<div>
+    <table class="table table-bordered">
+        <thead style="background-color: #e5e9ef;">
+            <th>Product Attribute</th>
+            <th>Is Required</th>
+            <th>Control Type</th>
+            <th>Display Order</th>
+            <th>Size chart</th>
+            <th>Attribute Name</th>
+            <th>Options </th>
+
+
+        </thead>
+        <tbody>
+
+            {% if display.length >0%}
+
+            {% for n in display %}
+
+
+            <tr>
+                <td>{{n.product_attribute}}</td>
+                <td>{{n.is_required}}</td>
+                <td>{{n.display_order}}</td>
+                <td>{{n.attribute_name}}</td>
+                <td>{{n.control_type}}</td>
+                <td>{{n.size_chart}}</td>
+
+                <td><button class="btn btn-xs btn-warning" type="button"
+                        onclick="abc(`{{n.product_attribute}}`,`{{n.is_required}}`,`{{n.display_order}}`,`{{n.attribute_name}}`,`{{n.control_type}}`,`{{n.size_chart}}`,`{{n.name}}`)">Edit</button>
+
+
+
+                    <button class="btn btn-xs btn-danger" data-id="{{n.name}}" onclick="Del($(this))">Delete</button>
+
+                </td>
+
+            </tr>
+
+            {% endfor%}
+            {% else%}
+            <tr>
+                <td colspan=" 7">No records found!
+                </td>
+            </tr>
+            {% endif %}
+        </tbody>
+    </table>
+
+</div>
