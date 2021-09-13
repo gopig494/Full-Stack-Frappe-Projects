@@ -1,8 +1,0 @@
-2021-09-04 17:13:34,419 INFO creating new app business_management
-2021-09-04 17:15:14,310 INFO creating new app business_management
-2021-09-04 17:16:15,035 INFO installing business_management
-2021-09-04 17:16:15,036 INFO ./env/bin/pip install -q  -e ./apps/business_management 
-2021-09-10 17:29:29,238 INFO getting app Frappe-Apps
-2021-09-10 17:29:29,276 INFO git clone https://github.com/gopig494/Frappe-Apps  --depth 1 --origin upstream
-2021-09-10 17:29:32,449 INFO installing employee_management
-2021-09-10 17:29:32,449 INFO ./env/bin/pip install -q  -e ./apps/employee_management 

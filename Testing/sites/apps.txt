@@ -1,3 +1,0 @@
-frappe
-frappe_io
-employee_management
