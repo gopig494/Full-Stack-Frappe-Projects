@@ -1,0 +1,19 @@
+{
+ "auto_update": false, 
+ "background_workers": 1, 
+ "developer_mode": true, 
+ "file_watcher_port": 6788, 
+ "frappe_user": "server-admin", 
+ "gunicorn_workers": 4, 
+ "rebase_on_pull": false, 
+ "redis_cache": "redis://localhost:13001", 
+ "redis_queue": "redis://localhost:11001", 
+ "redis_socketio": "redis://localhost:12001", 
+ "restart_supervisor_on_update": false, 
+ "restart_systemd_on_update": false, 
+ "serve_default_site": true, 
+ "shallow_clone": true, 
+ "socketio_port": 9001, 
+ "update_bench_on_update": true, 
+ "webserver_port": 8001
+}

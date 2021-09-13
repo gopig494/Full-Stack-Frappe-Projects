@@ -1,4 +1,4 @@
-[ERROR] 2021-09-11 13:59:45,335 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
+[ERROR] 2021-09-11 14:04:45,339 | /home/server-admin/Projects/Gopi/Training/apps/frappe/frappe/app.py:
 Site: management
 Form Dict: {
  "cmd": "frappe.desk.reportview.get",
